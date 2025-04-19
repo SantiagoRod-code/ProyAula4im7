@@ -78,6 +78,11 @@ public class materias extends javax.swing.JFrame {
         btnFis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnFis.setText("Fisica");
         btnFis.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnFis.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnFisMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlFisLayout = new javax.swing.GroupLayout(pnlFis);
         pnlFis.setLayout(pnlFisLayout);
@@ -198,10 +203,16 @@ public class materias extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalDifMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalDifMouseClicked
-        CalculoDiferencial abrir = new CalculoDiferencial();
+        CalDIfT1 abrir = new CalDIfT1();
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnCalDifMouseClicked
+
+    private void btnFisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFisMouseClicked
+        FIsica abrir = new FIsica();
+        abrir.setVisible (true);
+        dispose();
+    }//GEN-LAST:event_btnFisMouseClicked
 
     /**
      * @param args the command line arguments
