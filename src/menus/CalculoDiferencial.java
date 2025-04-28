@@ -4,6 +4,7 @@
  */
 package menus;
 
+import javax.swing.ImageIcon;
 import menus.*;
 
 /**
@@ -17,6 +18,7 @@ public class CalculoDiferencial extends javax.swing.JFrame {
      */
     public CalculoDiferencial() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage());
     }
 
     /**
@@ -82,6 +84,11 @@ public class CalculoDiferencial extends javax.swing.JFrame {
         btnTem2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnTem2.setText("Tema 2");
         btnTem2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTem2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTem2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlTem2Layout = new javax.swing.GroupLayout(pnlTem2);
         pnlTem2.setLayout(pnlTem2Layout);
@@ -101,6 +108,11 @@ public class CalculoDiferencial extends javax.swing.JFrame {
         btnTem3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnTem3.setText("Tema 3");
         btnTem3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTem3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTem3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlTem3Layout = new javax.swing.GroupLayout(pnlTem3);
         pnlTem3.setLayout(pnlTem3Layout);
@@ -120,6 +132,11 @@ public class CalculoDiferencial extends javax.swing.JFrame {
         btnTem4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnTem4.setText("Tema 4");
         btnTem4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTem4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTem4MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlTem4Layout = new javax.swing.GroupLayout(pnlTem4);
         pnlTem4.setLayout(pnlTem4Layout);
@@ -129,7 +146,7 @@ public class CalculoDiferencial extends javax.swing.JFrame {
         );
         pnlTem4Layout.setVerticalGroup(
             pnlTem4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnTem4, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
+            .addComponent(btnTem4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         jLabel5.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
@@ -175,20 +192,21 @@ public class CalculoDiferencial extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel2)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(76, 76, 76)))
                 .addContainerGap())
             .addComponent(pnlVolver, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(29, 29, 29)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(60, 60, 60)
+                .addGap(48, 48, 48)
                 .addComponent(pnlTem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(pnlTem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -196,7 +214,7 @@ public class CalculoDiferencial extends javax.swing.JFrame {
                 .addComponent(pnlTem3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(pnlTem4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(110, 110, 110)
+                .addGap(124, 124, 124)
                 .addComponent(pnlVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16))
         );
@@ -213,7 +231,7 @@ public class CalculoDiferencial extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel1)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -238,8 +256,8 @@ public class CalculoDiferencial extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
     private void btnTem1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTem1MouseClicked
+        int detector = 1;
         CalDIfT1 abrir = new CalDIfT1();
         abrir.setVisible(true);
         dispose();
@@ -250,6 +268,27 @@ public class CalculoDiferencial extends javax.swing.JFrame {
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnVolverMouseClicked
+
+    private void btnTem2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTem2MouseClicked
+        CalDIfT1 abrir = new CalDIfT1();
+        abrir.setVisible(true);
+        dispose();
+        int detector = 2;
+    }//GEN-LAST:event_btnTem2MouseClicked
+
+    private void btnTem3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTem3MouseClicked
+        CalDIfT1 abrir = new CalDIfT1();
+        abrir.setVisible(true);
+        dispose();
+        int detector = 3;
+    }//GEN-LAST:event_btnTem3MouseClicked
+
+    private void btnTem4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTem4MouseClicked
+        CalDIfT1 abrir = new CalDIfT1();
+        abrir.setVisible(true);
+        dispose();
+        int detector = 4;
+    }//GEN-LAST:event_btnTem4MouseClicked
 
     /**
      * @param args the command line arguments

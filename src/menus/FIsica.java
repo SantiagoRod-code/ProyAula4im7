@@ -4,6 +4,7 @@
  */
 package menus;
 
+import javax.swing.ImageIcon;
 import menus.*;
 
 /**
@@ -17,6 +18,7 @@ public class FIsica extends javax.swing.JFrame {
      */
     public FIsica() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage());
     }
 
     /**
@@ -32,16 +34,16 @@ public class FIsica extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         pnlTem1 = new javax.swing.JPanel();
         btnTem1 = new javax.swing.JLabel();
+        img1 = new javax.swing.JLabel();
+        pnlVolver = new javax.swing.JPanel();
+        btnVolver = new javax.swing.JLabel();
+        imgFis = new javax.swing.JLabel();
         pnlTem2 = new javax.swing.JPanel();
         btnTem2 = new javax.swing.JLabel();
         pnlTem3 = new javax.swing.JPanel();
         btnTem3 = new javax.swing.JLabel();
         pnlTem4 = new javax.swing.JPanel();
         btnTem4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        pnlVolver = new javax.swing.JPanel();
-        btnVolver = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -68,76 +70,17 @@ public class FIsica extends javax.swing.JFrame {
         pnlTem1.setLayout(pnlTem1Layout);
         pnlTem1Layout.setHorizontalGroup(
             pnlTem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnTem1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnTem1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         pnlTem1Layout.setVerticalGroup(
             pnlTem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(btnTem1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
-        pnlTem2.setBackground(new java.awt.Color(71, 1, 36));
-
-        btnTem2.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnTem2.setForeground(new java.awt.Color(255, 255, 255));
-        btnTem2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnTem2.setText("Tema 2");
-        btnTem2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout pnlTem2Layout = new javax.swing.GroupLayout(pnlTem2);
-        pnlTem2.setLayout(pnlTem2Layout);
-        pnlTem2Layout.setHorizontalGroup(
-            pnlTem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnTem2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        pnlTem2Layout.setVerticalGroup(
-            pnlTem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnTem2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-        );
-
-        pnlTem3.setBackground(new java.awt.Color(71, 1, 36));
-
-        btnTem3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnTem3.setForeground(new java.awt.Color(255, 255, 255));
-        btnTem3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnTem3.setText("Tema 3");
-        btnTem3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout pnlTem3Layout = new javax.swing.GroupLayout(pnlTem3);
-        pnlTem3.setLayout(pnlTem3Layout);
-        pnlTem3Layout.setHorizontalGroup(
-            pnlTem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnTem3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        pnlTem3Layout.setVerticalGroup(
-            pnlTem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnTem3, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-        );
-
-        pnlTem4.setBackground(new java.awt.Color(71, 1, 36));
-
-        btnTem4.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnTem4.setForeground(new java.awt.Color(255, 255, 255));
-        btnTem4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnTem4.setText("Tema 4");
-        btnTem4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout pnlTem4Layout = new javax.swing.GroupLayout(pnlTem4);
-        pnlTem4.setLayout(pnlTem4Layout);
-        pnlTem4Layout.setHorizontalGroup(
-            pnlTem4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnTem4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        pnlTem4Layout.setVerticalGroup(
-            pnlTem4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnTem4, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
-        );
-
-        jLabel5.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Fisica");
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/CalDif.png"))); // NOI18N
+        img1.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
+        img1.setForeground(new java.awt.Color(255, 255, 255));
+        img1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        img1.setText("Fisica");
 
         pnlVolver.setBackground(new java.awt.Color(71, 1, 36));
 
@@ -160,35 +103,111 @@ public class FIsica extends javax.swing.JFrame {
         );
         pnlVolverLayout.setVerticalGroup(
             pnlVolverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnVolver, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlVolverLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnVolver, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE))
+        );
+
+        imgFis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconFis (2).png"))); // NOI18N
+
+        pnlTem2.setBackground(new java.awt.Color(71, 1, 36));
+
+        btnTem2.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnTem2.setForeground(new java.awt.Color(255, 255, 255));
+        btnTem2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnTem2.setText("Tema 2");
+        btnTem2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTem2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTem2MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlTem2Layout = new javax.swing.GroupLayout(pnlTem2);
+        pnlTem2.setLayout(pnlTem2Layout);
+        pnlTem2Layout.setHorizontalGroup(
+            pnlTem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnTem2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        pnlTem2Layout.setVerticalGroup(
+            pnlTem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnTem2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        pnlTem3.setBackground(new java.awt.Color(71, 1, 36));
+
+        btnTem3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnTem3.setForeground(new java.awt.Color(255, 255, 255));
+        btnTem3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnTem3.setText("Tema 2");
+        btnTem3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTem3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTem3MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlTem3Layout = new javax.swing.GroupLayout(pnlTem3);
+        pnlTem3.setLayout(pnlTem3Layout);
+        pnlTem3Layout.setHorizontalGroup(
+            pnlTem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnTem3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        pnlTem3Layout.setVerticalGroup(
+            pnlTem3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnTem3, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        pnlTem4.setBackground(new java.awt.Color(71, 1, 36));
+
+        btnTem4.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnTem4.setForeground(new java.awt.Color(255, 255, 255));
+        btnTem4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnTem4.setText("Tema 2");
+        btnTem4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTem4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTem4MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlTem4Layout = new javax.swing.GroupLayout(pnlTem4);
+        pnlTem4.setLayout(pnlTem4Layout);
+        pnlTem4Layout.setHorizontalGroup(
+            pnlTem4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnTem4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        pnlTem4Layout.setVerticalGroup(
+            pnlTem4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnTem4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlTem1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pnlTem3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pnlTem4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pnlTem2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+            .addComponent(pnlTem1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(pnlVolver, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlTem2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlTem3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlTem4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(84, Short.MAX_VALUE)
+                .addComponent(imgFis)
+                .addGap(82, 82, 82))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(img1, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(60, 60, 60)
+                .addGap(30, 30, 30)
+                .addComponent(imgFis)
+                .addGap(18, 18, 18)
+                .addComponent(img1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
                 .addComponent(pnlTem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(pnlTem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -196,9 +215,8 @@ public class FIsica extends javax.swing.JFrame {
                 .addComponent(pnlTem3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(pnlTem4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(110, 110, 110)
-                .addComponent(pnlVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                .addGap(81, 81, 81)
+                .addComponent(pnlVolver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 500));
@@ -213,7 +231,7 @@ public class FIsica extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel1)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 572, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -250,6 +268,18 @@ public class FIsica extends javax.swing.JFrame {
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnVolverMouseClicked
+
+    private void btnTem2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTem2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTem2MouseClicked
+
+    private void btnTem3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTem3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTem3MouseClicked
+
+    private void btnTem4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTem4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTem4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -295,9 +325,9 @@ public class FIsica extends javax.swing.JFrame {
     private javax.swing.JLabel btnTem3;
     private javax.swing.JLabel btnTem4;
     private javax.swing.JLabel btnVolver;
+    private javax.swing.JLabel img1;
+    private javax.swing.JLabel imgFis;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

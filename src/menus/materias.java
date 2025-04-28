@@ -4,6 +4,8 @@
  */
 package menus;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author PC
@@ -15,6 +17,7 @@ public class materias extends javax.swing.JFrame {
      */
     public materias() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage());
     }
 
     /**
@@ -203,7 +206,7 @@ public class materias extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalDifMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalDifMouseClicked
-        CalDIfT1 abrir = new CalDIfT1();
+        CalculoDiferencial abrir = new CalculoDiferencial();
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnCalDifMouseClicked
