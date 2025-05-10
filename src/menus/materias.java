@@ -12,9 +12,8 @@ import javax.swing.ImageIcon;
  */
 public class materias extends javax.swing.JFrame {
 
-    /**
-     * Creates new form materias
-     */
+    public static int materias;
+    
     public materias() {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage());
@@ -44,6 +43,7 @@ public class materias extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -105,6 +105,11 @@ public class materias extends javax.swing.JFrame {
         btnQuim.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnQuim.setText("Quimica");
         btnQuim.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnQuim.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnQuimMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlQuimLayout = new javax.swing.GroupLayout(pnlQuim);
         pnlQuim.setLayout(pnlQuimLayout);
@@ -124,6 +129,11 @@ public class materias extends javax.swing.JFrame {
         btnCalFin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnCalFin.setText("Calculos Financieros");
         btnCalFin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCalFin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCalFinMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlCalFinLayout = new javax.swing.GroupLayout(pnlCalFin);
         pnlCalFin.setLayout(pnlCalFinLayout);
@@ -206,16 +216,36 @@ public class materias extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalDifMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalDifMouseClicked
-        CalculoDiferencial abrir = new CalculoDiferencial();
+        materias=1;
+        
+        Parcial abrir = new Parcial();
         abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnCalDifMouseClicked
 
     private void btnFisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFisMouseClicked
-        FIsica abrir = new FIsica();
-        abrir.setVisible (true);
+        materias=2;
+        
+        Parcial abrir = new Parcial();
+        abrir.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnFisMouseClicked
+
+    private void btnQuimMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnQuimMouseClicked
+        materias=3;
+        
+        Parcial abrir = new Parcial();
+        abrir.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnQuimMouseClicked
+
+    private void btnCalFinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalFinMouseClicked
+        materias=4;
+        
+        Parcial abrir = new Parcial();
+        abrir.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnCalFinMouseClicked
 
     /**
      * @param args the command line arguments
