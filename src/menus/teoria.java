@@ -2,15 +2,19 @@
 package menus;
 
 import java.awt.Color;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 public class teoria extends javax.swing.JFrame {
 
-    
+    String mensaje = "Seguro que quieres abandonar la leccion"; 
     
     public teoria() {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage()); 
+        
+        
         txtNomTem.setEditable(false);
         txtNomMat.setEditable(false);
         
@@ -27,20 +31,36 @@ public class teoria extends javax.swing.JFrame {
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
                     txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 5){
                     txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 6){
                     txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 7){
                     txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }
             }
         }else if (materias.materias == 2){
@@ -54,20 +74,36 @@ public class teoria extends javax.swing.JFrame {
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
                     txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 5){
                     txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 6){
                     txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 7){
                     txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }
             }
         }else if (materias.materias == 4){
@@ -81,20 +117,36 @@ public class teoria extends javax.swing.JFrame {
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
                     txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 5){
                     txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 6){
                     txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 7){
                     txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }
             }
         }else if (materias.materias == 3){
@@ -108,30 +160,41 @@ public class teoria extends javax.swing.JFrame {
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
                     txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 5){
                     txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 6){
                     txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 7){
                     txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
                 }
             }
         }
     }
 
-    /**
-     * This method is called from within the constructor to initialize the form.
-     * WARNING: Do NOT modify this code. The content of this method is always
-     * regenerated by the Form Editor.
-     */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -147,6 +210,8 @@ public class teoria extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         btnVolver = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtTexto = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -199,7 +264,7 @@ public class teoria extends javax.swing.JFrame {
 
         btnVolver.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnVolver.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnVolver.setText("Volver");
+        btnVolver.setText("Salir");
         btnVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -218,6 +283,12 @@ public class teoria extends javax.swing.JFrame {
             .addComponent(btnVolver, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
         );
 
+        txtTexto.setEditable(false);
+        txtTexto.setColumns(20);
+        txtTexto.setRows(5);
+        txtTexto.setBorder(null);
+        jScrollPane1.setViewportView(txtTexto);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -225,11 +296,17 @@ public class teoria extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 691, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 690, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(345, Short.MAX_VALUE)
+                .addContainerGap(57, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -258,12 +335,31 @@ public class teoria extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNomTemActionPerformed
 
     private void btnVolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolverMouseClicked
-        
+        Object[] opciones = {"Cancelar", "Salir"};
+        int seleccion = JOptionPane.showOptionDialog(
+            null,
+            mensaje,
+            "Alerta",
+            JOptionPane.DEFAULT_OPTION,
+            JOptionPane.PLAIN_MESSAGE,
+            getIcon("/imagenes/alerta.png", 40, 40),
+            opciones,
+            opciones[0] 
+        );
+
+        if (seleccion == 0) {
+            
+        } else if (seleccion == 1) {
+            temas1 abrir = new temas1();
+            abrir.setVisible(true);
+            dispose();
+        } else if (seleccion == JOptionPane.CLOSED_OPTION) {
+            
+        } else {
+            
+        }
     }//GEN-LAST:event_btnVolverMouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -306,7 +402,13 @@ public class teoria extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtNomMat;
     private javax.swing.JTextField txtNomTem;
+    private javax.swing.JTextArea txtTexto;
     // End of variables declaration//GEN-END:variables
+
+    private Icon getIcon(String path, int w, int h) {
+        return new ImageIcon(new ImageIcon(getClass().getResource(path)).getImage().getScaledInstance(w, h, 0));
+    }
 }

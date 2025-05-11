@@ -171,6 +171,7 @@ public class temas1 extends javax.swing.JFrame {
 
         btnTema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema.setContentAreaFilled(false);
+        btnTema.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTema.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema72.png"))); // NOI18N
         btnTema.addActionListener(new java.awt.event.ActionListener() {
@@ -181,6 +182,7 @@ public class temas1 extends javax.swing.JFrame {
 
         btnTema1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema1.setContentAreaFilled(false);
+        btnTema1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTema1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema72.png"))); // NOI18N
         btnTema1.addActionListener(new java.awt.event.ActionListener() {
@@ -191,6 +193,7 @@ public class temas1 extends javax.swing.JFrame {
 
         btnTema2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema2.setContentAreaFilled(false);
+        btnTema2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTema2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema72.png"))); // NOI18N
         btnTema2.addActionListener(new java.awt.event.ActionListener() {
@@ -201,6 +204,7 @@ public class temas1 extends javax.swing.JFrame {
 
         btnTema3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema3.setContentAreaFilled(false);
+        btnTema3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTema3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema72.png"))); // NOI18N
         btnTema3.addActionListener(new java.awt.event.ActionListener() {
@@ -211,6 +215,7 @@ public class temas1 extends javax.swing.JFrame {
 
         btnTema4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema4.setContentAreaFilled(false);
+        btnTema4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTema4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema72.png"))); // NOI18N
         btnTema4.addActionListener(new java.awt.event.ActionListener() {
@@ -221,6 +226,7 @@ public class temas1 extends javax.swing.JFrame {
 
         btnTema5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema5.setContentAreaFilled(false);
+        btnTema5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTema5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema72.png"))); // NOI18N
         btnTema5.addActionListener(new java.awt.event.ActionListener() {
@@ -231,6 +237,7 @@ public class temas1 extends javax.swing.JFrame {
 
         btnTema6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema6.setContentAreaFilled(false);
+        btnTema6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTema6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema72.png"))); // NOI18N
         btnTema6.addActionListener(new java.awt.event.ActionListener() {
@@ -241,6 +248,7 @@ public class temas1 extends javax.swing.JFrame {
 
         btnTema7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema7.setContentAreaFilled(false);
+        btnTema7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTema7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema.png"))); // NOI18N
         btnTema7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imgTema72.png"))); // NOI18N
         btnTema7.addActionListener(new java.awt.event.ActionListener() {

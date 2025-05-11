@@ -1,11 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package menus;
 
+import java.awt.Color;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 import menus.*;
 
 /**
@@ -15,6 +15,7 @@ import menus.*;
 public class Parcial extends javax.swing.JFrame {
     
     public static int parcial;
+    UIManager UI;
     
     String mensaje = "Informacion no disponible por el momento";
     
@@ -269,21 +270,23 @@ public class Parcial extends javax.swing.JFrame {
     //Boton parcial 2
     private void btnPar2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPar2MouseClicked
         parcial=2;
-        JOptionPane.showMessageDialog(null, mensaje);
+        
+        UI = null;
+        UI.put("OptionPane.background", new Color (144, 12, 63));
+        UI.put("Panel.background", new Color (144, 12, 63));
+        
+        JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
     }//GEN-LAST:event_btnPar2MouseClicked
 
     private void btnPar3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPar3MouseClicked
         parcial=3;
-        JOptionPane.showMessageDialog(null, mensaje);
+        JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
     }//GEN-LAST:event_btnPar3MouseClicked
 
     private void txtNomMatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomMatActionPerformed
 
     }//GEN-LAST:event_txtNomMatActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -338,4 +341,8 @@ public class Parcial extends javax.swing.JFrame {
     private javax.swing.JPanel pnlVolver;
     private javax.swing.JTextField txtNomMat;
     // End of variables declaration//GEN-END:variables
+
+    private Icon getIcon(String path, int w, int h) {
+        return new ImageIcon(new ImageIcon(getClass().getResource(path)).getImage().getScaledInstance(w, h, 0));
+    }
 }
