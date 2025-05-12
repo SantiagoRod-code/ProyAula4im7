@@ -1,7 +1,6 @@
 
 package menus;
 
-import java.awt.Color;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -270,11 +269,6 @@ public class Parcial extends javax.swing.JFrame {
     //Boton parcial 2
     private void btnPar2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPar2MouseClicked
         parcial=2;
-        
-        UI = null;
-        UI.put("OptionPane.background", new Color (144, 12, 63));
-        UI.put("Panel.background", new Color (144, 12, 63));
-        
         JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
     }//GEN-LAST:event_btnPar2MouseClicked
 

@@ -6,13 +6,11 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
-public class teoria extends javax.swing.JFrame {
+public class ejemplo extends javax.swing.JFrame {
 
-    String mensaje = "Seguro que quieres abandonar la leccion"; 
+    String mensaje = "Seguro que quieres abandonar la leccion";
     
-    public static int avance;
-    
-    public teoria() {
+    public ejemplo() {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage()); 
         
@@ -33,11 +31,19 @@ public class teoria extends javax.swing.JFrame {
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
                     txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                     
+                    if(teoria.avance == 1){
+                        txtInstru.setText(""+teoria.avance);       //Editar Ejemplo
+                        txtTexto.setText("Descripcion de ejemplo 1");    //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){
+                        txtInstru.setText(""+teoria.avance);       //Editar Ejemplo
+                        txtTexto.setText("Descripcion de ejemplo 1");    //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
@@ -203,18 +209,19 @@ public class teoria extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        txtNomMat = new javax.swing.JTextField();
         txtNomTem = new javax.swing.JTextField();
         imgCalDif = new javax.swing.JLabel();
         imgFis = new javax.swing.JLabel();
         imgQuim = new javax.swing.JLabel();
         imgCalFin = new javax.swing.JLabel();
+        txtNomMat = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         btnVolver = new javax.swing.JLabel();
         txtTexto = new javax.swing.JTextArea();
         jPanel5 = new javax.swing.JPanel();
-        btnSiguiente = new javax.swing.JLabel();
+        btnVolver1 = new javax.swing.JLabel();
+        txtInstru = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -222,18 +229,6 @@ public class teoria extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        txtNomMat.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
-        txtNomMat.setForeground(new java.awt.Color(255, 255, 255));
-        txtNomMat.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtNomMat.setText(".");
-        txtNomMat.setBorder(null);
-        txtNomMat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNomMatActionPerformed(evt);
-            }
-        });
-        jPanel2.add(txtNomMat, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 230, 40));
 
         txtNomTem.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
         txtNomTem.setForeground(new java.awt.Color(255, 255, 255));
@@ -258,6 +253,18 @@ public class teoria extends javax.swing.JFrame {
 
         imgCalFin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconCalFin.png"))); // NOI18N
         jPanel2.add(imgCalFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
+
+        txtNomMat.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
+        txtNomMat.setForeground(new java.awt.Color(255, 255, 255));
+        txtNomMat.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtNomMat.setText(".");
+        txtNomMat.setBorder(null);
+        txtNomMat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomMatActionPerformed(evt);
+            }
+        });
+        jPanel2.add(txtNomMat, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 230, 40));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 130));
 
@@ -293,13 +300,13 @@ public class teoria extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(153, 153, 153));
 
-        btnSiguiente.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        btnSiguiente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnSiguiente.setText("Siguiente");
-        btnSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnSiguiente.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnVolver1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnVolver1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnVolver1.setText("Siguiente");
+        btnVolver1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVolver1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnSiguienteMouseClicked(evt);
+                btnVolver1MouseClicked(evt);
             }
         });
 
@@ -309,14 +316,26 @@ public class teoria extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnVolver1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnVolver1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+
+        txtInstru.setBackground(new java.awt.Color(255, 255, 255));
+        txtInstru.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
+        txtInstru.setForeground(new java.awt.Color(0, 0, 0));
+        txtInstru.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtInstru.setText(".");
+        txtInstru.setBorder(null);
+        txtInstru.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtInstruActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -324,25 +343,31 @@ public class teoria extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 582, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addComponent(txtInstru, javax.swing.GroupLayout.PREFERRED_SIZE, 686, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(60, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                     .addContainerGap(56, Short.MAX_VALUE)
-                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 697, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(47, Short.MAX_VALUE)))
+                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 686, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(58, Short.MAX_VALUE)))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(345, Short.MAX_VALUE)
+                .addGap(64, 64, 64)
+                .addComponent(txtInstru, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 241, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(49, Short.MAX_VALUE)
-                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(128, Short.MAX_VALUE)
+                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(67, Short.MAX_VALUE)))
         );
 
@@ -386,8 +411,6 @@ public class teoria extends javax.swing.JFrame {
         if (seleccion == 0) {
             
         } else if (seleccion == 1) {
-            avance = 0;
-            
             temas1 abrir = new temas1();
             abrir.setVisible(true);
             dispose();
@@ -398,13 +421,13 @@ public class teoria extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnVolverMouseClicked
 
-    private void btnSiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSiguienteMouseClicked
-        avance = avance+1;
-        
-        ejemplo abrir = new ejemplo();
-        abrir.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnSiguienteMouseClicked
+    private void btnVolver1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolver1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVolver1MouseClicked
+
+    private void txtInstruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtInstruActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtInstruActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -420,27 +443,28 @@ public class teoria extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(teoria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ejemplo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(teoria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ejemplo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(teoria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ejemplo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(teoria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ejemplo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new teoria().setVisible(true);
+                new ejemplo().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btnSiguiente;
     private javax.swing.JLabel btnVolver;
+    private javax.swing.JLabel btnVolver1;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
     private javax.swing.JLabel imgFis;
@@ -450,6 +474,7 @@ public class teoria extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JTextField txtInstru;
     private javax.swing.JTextField txtNomMat;
     private javax.swing.JTextField txtNomTem;
     private javax.swing.JTextArea txtTexto;
