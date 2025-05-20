@@ -399,7 +399,7 @@ public class teoria extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVolverMouseClicked
 
     private void btnSiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSiguienteMouseClicked
-        avance = avance+1;
+        avance++;
         
         ejemplo abrir = new ejemplo();
         abrir.setVisible(true);

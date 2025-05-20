@@ -20,7 +20,7 @@ public class ejemplo extends javax.swing.JFrame {
         
         imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
         
-        if (materias.materias == 1){
+        if (materias.materias == 1){ // Detector materia
             jPanel2.setBackground(new Color(144, 12, 63));
             txtNomMat.setBackground(new Color(144, 12, 63));
             txtNomTem.setBackground(new Color(144, 12, 63));
@@ -28,46 +28,95 @@ public class ejemplo extends javax.swing.JFrame {
             txtNomMat.setText("Calculo diferencial");
             imgCalDif.setVisible(true);
             
-            if (Parcial.parcial == 1){
-                if (temas1.tema == 1){
+            if (Parcial.parcial == 1){  // Detector parcial
+                
+                if (temas1.tema == 1){   // Detector tema
                     txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                     
-                    if(teoria.avance == 1){
-                        txtInstru.setText(""+teoria.avance);       //Editar Ejemplo
-                        txtTexto.setText("Descripcion de ejemplo 1");    //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
                     
-                    if(teoria.avance == 1){
-                        txtInstru.setText(""+teoria.avance);       //Editar Ejemplo
-                        txtTexto.setText("Descripcion de ejemplo 1");    //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 5){
                     txtNomTem.setText("Tema 5"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 6){
                     txtNomTem.setText("Tema 6"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 7){
                     txtNomTem.setText("Tema 7"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }
             }
@@ -80,40 +129,97 @@ public class ejemplo extends javax.swing.JFrame {
             imgFis.setVisible(true);
             
             if (Parcial.parcial == 1){
-                if (temas1.tema == 1){
+                    
+                if (temas1.tema == 1){   // Detector tema
                     txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 5){
                     txtNomTem.setText("Tema 5"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 6){
                     txtNomTem.setText("Tema 6"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 7){
                     txtNomTem.setText("Tema 7"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }
-            }
+        }
         }else if (materias.materias == 4){
             jPanel2.setBackground(new Color(210, 121, 0));
             txtNomMat.setBackground(new Color(210, 121, 0));
@@ -123,37 +229,93 @@ public class ejemplo extends javax.swing.JFrame {
             imgCalFin.setVisible(true);
             
             if (Parcial.parcial == 1){
-                if (temas1.tema == 1){
+                if (temas1.tema == 1){   // Detector tema
                     txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 5){
                     txtNomTem.setText("Tema 5"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 6){
                     txtNomTem.setText("Tema 6"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 7){
                     txtNomTem.setText("Tema 7"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }
             }
@@ -166,37 +328,93 @@ public class ejemplo extends javax.swing.JFrame {
             imgQuim.setVisible(true);
             
             if (Parcial.parcial == 1){
-                if (temas1.tema == 1){
+                if (temas1.tema == 1){   // Detector tema
                     txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 5){
                     txtNomTem.setText("Tema 5"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 6){
                     txtNomTem.setText("Tema 6"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 7){
                     txtNomTem.setText("Tema 7"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                     
                 }
             }
@@ -220,7 +438,7 @@ public class ejemplo extends javax.swing.JFrame {
         btnVolver = new javax.swing.JLabel();
         txtTexto = new javax.swing.JTextArea();
         jPanel5 = new javax.swing.JPanel();
-        btnVolver1 = new javax.swing.JLabel();
+        btnSiguiente = new javax.swing.JLabel();
         txtInstru = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -300,13 +518,13 @@ public class ejemplo extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(153, 153, 153));
 
-        btnVolver1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        btnVolver1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnVolver1.setText("Siguiente");
-        btnVolver1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnVolver1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSiguiente.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnSiguiente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnSiguiente.setText("Siguiente");
+        btnSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSiguiente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnVolver1MouseClicked(evt);
+                btnSiguienteMouseClicked(evt);
             }
         });
 
@@ -316,13 +534,13 @@ public class ejemplo extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnVolver1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnVolver1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         txtInstru.setBackground(new java.awt.Color(255, 255, 255));
@@ -343,12 +561,12 @@ public class ejemplo extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 582, Short.MAX_VALUE)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
+                .addGap(51, 51, 51)
                 .addComponent(txtInstru, javax.swing.GroupLayout.PREFERRED_SIZE, 686, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                     .addContainerGap(56, Short.MAX_VALUE)
@@ -358,16 +576,16 @@ public class ejemplo extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(64, 64, 64)
+                .addGap(40, 40, 40)
                 .addComponent(txtInstru, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 241, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 265, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(128, Short.MAX_VALUE)
-                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(118, Short.MAX_VALUE)
+                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(67, Short.MAX_VALUE)))
         );
 
@@ -411,6 +629,8 @@ public class ejemplo extends javax.swing.JFrame {
         if (seleccion == 0) {
             
         } else if (seleccion == 1) {
+            teoria.avance = 0;
+            
             temas1 abrir = new temas1();
             abrir.setVisible(true);
             dispose();
@@ -421,9 +641,19 @@ public class ejemplo extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnVolverMouseClicked
 
-    private void btnVolver1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolver1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnVolver1MouseClicked
+    private void btnSiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSiguienteMouseClicked
+        teoria.avance++;
+        
+        if (teoria.avance == 2){
+            ejemplo abrir = new ejemplo();
+            abrir.setVisible(true);
+            dispose();
+        } else {
+            ejercicio abrir = new ejercicio();
+            abrir.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_btnSiguienteMouseClicked
 
     private void txtInstruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtInstruActionPerformed
         // TODO add your handling code here:
@@ -463,8 +693,8 @@ public class ejemplo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel btnSiguiente;
     private javax.swing.JLabel btnVolver;
-    private javax.swing.JLabel btnVolver1;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
     private javax.swing.JLabel imgFis;
