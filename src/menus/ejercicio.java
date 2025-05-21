@@ -9,10 +9,44 @@ import javax.swing.JOptionPane;
 public class ejercicio extends javax.swing.JFrame {
     
     String[] opciones = {"Aceptar"};
-
     String mensaje = "Seguro que quieres abandonar la leccion";
-    
     String correct = "Respuesta correcta";
+    
+    public static int tem1Fin1;
+    public static int tem1Fin2;
+    public static int tem1Fin3;
+    public static int tem1Fin4;
+    public static int tem1Fin5;
+    public static int tem1Fin6;
+    public static int tem1Fin7;
+    public static int tem1Fin8;
+    
+    public static int tem2Fin1;
+    public static int tem2Fin2;
+    public static int tem2Fin3;
+    public static int tem2Fin4;
+    public static int tem2Fin5;
+    public static int tem2Fin6;
+    public static int tem2Fin7;
+    public static int tem2Fin8;
+    
+    public static int tem3Fin1;
+    public static int tem3Fin2;
+    public static int tem3Fin3;
+    public static int tem3Fin4;
+    public static int tem3Fin5;
+    public static int tem3Fin6;
+    public static int tem3Fin7;
+    public static int tem3Fin8;
+    
+    public static int tem4Fin1;
+    public static int tem4Fin2;
+    public static int tem4Fin3;
+    public static int tem4Fin4;
+    public static int tem4Fin5;
+    public static int tem4Fin6;
+    public static int tem4Fin7;
+    public static int tem4Fin8;
     
     public ejercicio() {
         initComponents();
@@ -517,6 +551,7 @@ public class ejercicio extends javax.swing.JFrame {
 
         txtTexto.setEditable(false);
         txtTexto.setColumns(20);
+        txtTexto.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtTexto.setRows(5);
         txtTexto.setBorder(null);
 
@@ -673,7 +708,6 @@ public class ejercicio extends javax.swing.JFrame {
                     if (teoria.avance == 3){
                         if (esNumero && respuestaNumero == 1) { //Verificador de numero
                             teoria.avance = teoria.avance + 1;
-                            System.out.println(""+ teoria.avance); //Verificador de codigo
                             
                             JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
                             ejercicio abrir = new ejercicio();
@@ -682,7 +716,6 @@ public class ejercicio extends javax.swing.JFrame {
                             
                         }else if (!esNumero && respuestaTexto.equalsIgnoreCase("uno")) {   // Verificador texto
                              teoria.avance = teoria.avance + 1;
-                             System.out.println(""+ teoria.avance);
                              
                             JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
                             ejercicio abrir = new ejercicio();
@@ -694,21 +727,25 @@ public class ejercicio extends javax.swing.JFrame {
                         }
                     } else if (teoria.avance == 4){
                         if (esNumero && respuestaNumero == 2) { //Verificador de numero
-                            teoria.avance = teoria.avance + 1;
-                            System.out.println(""+ teoria.avance);//Verificador de codigo
+                            tem1Fin1 = 1;
+                            teoria.avance = 0;
                             
                             JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                            ejercicio abrir = new ejercicio();
+                            
+                            JOptionPane.showMessageDialog(null, "Felicidades terminaste la leccion", "Leccion terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png",40,40));
+                            temas1 abrir = new temas1();
                             abrir.setVisible(true);
                             dispose();
                             
                         }else if (!esNumero && respuestaTexto.equalsIgnoreCase("dos")) {   // Verificador texto
-                            teoria.avance = teoria.avance + 1;
-                            System.out.println(""+ teoria.avance);//Verificador de codigo
+                            tem1Fin1 = 1;
+                            teoria.avance = 0;
                              
                             JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                            ejercicio abrir = new ejercicio();
-                            abrir.setVisible(true);
+                            
+                            JOptionPane.showMessageDialog(null, "Felicidades terminaste la leccion", "Leccion terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png",40,40));
+                            temas1 open = new temas1();
+                            open.setVisible(true);
                             dispose();
                             
                         }else {// Incorrecta
@@ -752,7 +789,7 @@ public class ejercicio extends javax.swing.JFrame {
 
     private void txtRespuestaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtRespuestaMouseClicked
         txtRespuesta.setText("");
-        
+        txtRespuesta.setForeground(Color.BLACK);
         
     }//GEN-LAST:event_txtRespuestaMouseClicked
 

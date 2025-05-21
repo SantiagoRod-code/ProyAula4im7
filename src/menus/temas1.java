@@ -11,6 +11,12 @@ public class temas1 extends javax.swing.JFrame {
     public temas1() {
         initComponents();
         
+        if (ejercicio.tem1Fin1 == 1){
+            btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+            btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+            btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+        }
+        
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage()); 
         txtNomPar.setEditable(false);
         txtNomMat.setEditable(false);
