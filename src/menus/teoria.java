@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 
 public class teoria extends javax.swing.JFrame {
 
+    int xMouse, yMouse;
     String mensaje = "Seguro que quieres abandonar la leccion"; 
     
     public static int avance;
@@ -23,6 +24,8 @@ public class teoria extends javax.swing.JFrame {
         imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
         
         if (materias.materias == 1){
+            barraTa.setBackground(new Color(144, 12, 63));
+            cerrar.setBackground(new Color(144, 12, 63));
             jPanel2.setBackground(new Color(144, 12, 63));
             txtNomMat.setBackground(new Color(144, 12, 63));
             txtNomTem.setBackground(new Color(144, 12, 63));
@@ -66,6 +69,8 @@ public class teoria extends javax.swing.JFrame {
                 }
             }
         }else if (materias.materias == 2){
+            barraTa.setBackground(new Color(4, 27, 135));
+            cerrar.setBackground(new Color(4, 27, 135));
             jPanel2.setBackground(new Color(4, 27, 135));
             txtNomMat.setBackground(new Color(4, 27, 135));
             txtNomTem.setBackground(new Color(4, 27, 135));
@@ -109,6 +114,8 @@ public class teoria extends javax.swing.JFrame {
                 }
             }
         }else if (materias.materias == 4){
+            barraTa.setBackground(new Color(210, 121, 0));
+            cerrar.setBackground(new Color(210, 121, 0));
             jPanel2.setBackground(new Color(210, 121, 0));
             txtNomMat.setBackground(new Color(210, 121, 0));
             txtNomTem.setBackground(new Color(210, 121, 0));
@@ -152,6 +159,8 @@ public class teoria extends javax.swing.JFrame {
                 }
             }
         }else if (materias.materias == 3){
+            barraTa.setBackground(new Color(22, 86, 35));
+            cerrar.setBackground(new Color(22, 86, 35));
             jPanel2.setBackground(new Color(22, 86, 35));
             txtNomMat.setBackground(new Color(22, 86, 35));
             txtNomTem.setBackground(new Color(22, 86, 35));
@@ -202,6 +211,9 @@ public class teoria extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        barraTa = new javax.swing.JPanel();
+        cerrar = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         txtNomMat = new javax.swing.JTextField();
         txtNomTem = new javax.swing.JTextField();
@@ -217,8 +229,57 @@ public class teoria extends javax.swing.JFrame {
         btnSiguiente = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
+        setUndecorated(true);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        barraTa.setBackground(new java.awt.Color(80, 0, 40));
+        barraTa.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                barraTaMouseDragged(evt);
+            }
+        });
+        barraTa.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                barraTaMousePressed(evt);
+            }
+        });
+        barraTa.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        cerrar.setBackground(new java.awt.Color(80, 0, 40));
+
+        jLabel2.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("X");
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout cerrarLayout = new javax.swing.GroupLayout(cerrar);
+        cerrar.setLayout(cerrarLayout);
+        cerrarLayout.setHorizontalGroup(
+            cerrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+        );
+        cerrarLayout.setVerticalGroup(
+            cerrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        barraTa.add(cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 30));
+
+        jPanel1.add(barraTa, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 30));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -406,6 +467,38 @@ public class teoria extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnSiguienteMouseClicked
 
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+        cerrar.setBackground(Color.red);
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
+        if (materias.materias == 1){
+            cerrar.setBackground(new Color(144, 12, 63));
+        }else if (materias.materias == 2){
+            cerrar.setBackground(new Color(4, 27, 135));
+        }else if (materias.materias == 3){
+            cerrar.setBackground(new Color(22, 86, 35));
+        }else if (materias.materias ==4){
+            cerrar.setBackground(new Color(210, 121, 0));
+        }
+
+    }//GEN-LAST:event_jLabel2MouseExited
+
+    private void barraTaMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_barraTaMouseDragged
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        this.setLocation(x - xMouse, y - yMouse);
+    }//GEN-LAST:event_barraTaMouseDragged
+
+    private void barraTaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_barraTaMousePressed
+        xMouse = evt.getX();
+        yMouse = evt.getY();
+    }//GEN-LAST:event_barraTaMousePressed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -439,12 +532,15 @@ public class teoria extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel barraTa;
     private javax.swing.JLabel btnSiguiente;
     private javax.swing.JLabel btnVolver;
+    private javax.swing.JPanel cerrar;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
     private javax.swing.JLabel imgFis;
     private javax.swing.JLabel imgQuim;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

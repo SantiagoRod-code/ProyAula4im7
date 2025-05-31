@@ -6,15 +6,148 @@ import javax.swing.ImageIcon;
 
 public class temas1 extends javax.swing.JFrame {
     
+    int xMouse, yMouse;
     public static int tema;
 
     public temas1() {
         initComponents();
         
-        if (ejercicio.tem1Fin1 == 1){
-            btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
-            btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
-            btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+        if (materias.materias == 1){
+            if (ejercicio.tem1Fin1 == 1){
+                btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem1Fin2 == 1 ){
+                btnTema1.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema1.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema1.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem1Fin3 == 1 ){
+                btnTema2.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema2.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema2.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem1Fin4 == 1 ){
+                btnTema3.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema3.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema3.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem1Fin5 == 1 ){
+                btnTema4.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema4.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema4.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem1Fin6 == 1 ){
+                btnTema5.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema5.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema5.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem1Fin7 == 1 ){
+                btnTema6.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema6.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema6.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem1Fin8 == 1 ){
+                btnTema7.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            }
+        } else if (materias.materias == 2){
+            if (ejercicio.tem2Fin1 == 1){
+                btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem2Fin2 == 1 ){
+                btnTema1.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema1.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema1.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem2Fin3 == 1 ){
+                btnTema2.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema2.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema2.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem2Fin4 == 1 ){
+                btnTema3.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema3.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema3.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem2Fin5 == 1 ){
+                btnTema4.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema4.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema4.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem2Fin6 == 1 ){
+                btnTema5.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema5.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema5.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem2Fin7 == 1 ){
+                btnTema6.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema6.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema6.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem2Fin8 == 1 ){
+                btnTema7.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            }
+        } else if (materias.materias == 3){
+            if (ejercicio.tem3Fin1 == 1){
+                btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem3Fin2 == 1 ){
+                btnTema1.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema1.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema1.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem3Fin3 == 1 ){
+                btnTema2.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema2.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema2.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem3Fin4 == 1 ){
+                btnTema3.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema3.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema3.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem3Fin5 == 1 ){
+                btnTema4.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema4.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema4.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem3Fin6 == 1 ){
+                btnTema5.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema5.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema5.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem3Fin7 == 1 ){
+                btnTema6.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema6.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema6.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem3Fin8 == 1 ){
+                btnTema7.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            }
+        }else if (materias.materias == 4){
+            if (ejercicio.tem4Fin1 == 1){
+                btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem4Fin2 == 1 ){
+                btnTema1.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema1.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema1.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem4Fin3 == 1 ){
+                btnTema2.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema2.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema2.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem4Fin4 == 1 ){
+                btnTema3.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema3.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema3.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem4Fin5 == 1 ){
+                btnTema4.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema4.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema4.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem4Fin6 == 1 ){
+                btnTema5.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema5.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema5.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem4Fin7 == 1 ){
+                btnTema6.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema6.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema6.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem4Fin8 == 1 ){
+                btnTema7.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            }
         }
         
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage()); 
@@ -24,6 +157,8 @@ public class temas1 extends javax.swing.JFrame {
         imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
         
         if (materias.materias == 1){
+            barraTa.setBackground(new Color(144, 12, 63));
+            cerrar.setBackground(new Color(144, 12, 63));
             jPanel2.setBackground(new Color(144, 12, 63));
             txtNomMat.setBackground(new Color(144, 12, 63));
             txtNomPar.setBackground(new Color(144, 12, 63));
@@ -36,6 +171,8 @@ public class temas1 extends javax.swing.JFrame {
             }
             
         }else if (materias.materias == 2){
+            barraTa.setBackground(new Color(4, 27, 135));
+            cerrar.setBackground(new Color(4, 27, 135));
             jPanel2.setBackground(new Color(4, 27, 135));
             txtNomMat.setBackground(new Color(4, 27, 135));
             txtNomPar.setBackground(new Color(4, 27, 135));
@@ -48,6 +185,8 @@ public class temas1 extends javax.swing.JFrame {
             }
             
         }else if (materias.materias == 3){
+            barraTa.setBackground(new Color(22, 86, 35));
+            cerrar.setBackground(new Color(22, 86, 35));
             jPanel2.setBackground(new Color(22, 86, 35));
             txtNomMat.setBackground(new Color(22, 86, 35));
             txtNomPar.setBackground(new Color(22, 86, 35));
@@ -60,6 +199,8 @@ public class temas1 extends javax.swing.JFrame {
             }
             
         }else if (materias.materias == 4){
+            barraTa.setBackground(new Color(210, 121, 0));
+            cerrar.setBackground(new Color(210, 121, 0));
             jPanel2.setBackground(new Color(210, 121, 0));
             txtNomMat.setBackground(new Color(210, 121, 0));
             txtNomPar.setBackground(new Color(210, 121, 0));
@@ -79,6 +220,9 @@ public class temas1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        barraTa = new javax.swing.JPanel();
+        cerrar = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         txtNomMat = new javax.swing.JTextField();
         txtNomPar = new javax.swing.JTextField();
@@ -105,9 +249,58 @@ public class temas1 extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
+        setUndecorated(true);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        barraTa.setBackground(new java.awt.Color(80, 0, 40));
+        barraTa.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                barraTaMouseDragged(evt);
+            }
+        });
+        barraTa.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                barraTaMousePressed(evt);
+            }
+        });
+        barraTa.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        cerrar.setBackground(new java.awt.Color(80, 0, 40));
+
+        jLabel7.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("X");
+        jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel7MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout cerrarLayout = new javax.swing.GroupLayout(cerrar);
+        cerrar.setLayout(cerrarLayout);
+        cerrarLayout.setHorizontalGroup(
+            cerrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+        );
+        cerrarLayout.setVerticalGroup(
+            cerrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        barraTa.add(cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 30));
+
+        jPanel1.add(barraTa, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 30));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -439,6 +632,37 @@ public class temas1 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnTema7ActionPerformed
 
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseEntered
+        cerrar.setBackground(Color.red);
+    }//GEN-LAST:event_jLabel7MouseEntered
+
+    private void jLabel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseExited
+        if (materias.materias == 1){
+            cerrar.setBackground(new Color(144, 12, 63));
+        }else if (materias.materias == 2){
+            cerrar.setBackground(new Color(4, 27, 135));
+        }else if (materias.materias == 3){
+            cerrar.setBackground(new Color(22, 86, 35));
+        }else if (materias.materias ==4){
+            cerrar.setBackground(new Color(210, 121, 0));
+        }
+    }//GEN-LAST:event_jLabel7MouseExited
+
+    private void barraTaMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_barraTaMouseDragged
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        this.setLocation(x - xMouse, y - yMouse);
+    }//GEN-LAST:event_barraTaMouseDragged
+
+    private void barraTaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_barraTaMousePressed
+        xMouse = evt.getX();
+        yMouse = evt.getY();
+    }//GEN-LAST:event_barraTaMousePressed
+
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -474,6 +698,7 @@ public class temas1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel barraTa;
     private javax.swing.JButton btnTema;
     private javax.swing.JButton btnTema1;
     private javax.swing.JButton btnTema2;
@@ -483,6 +708,7 @@ public class temas1 extends javax.swing.JFrame {
     private javax.swing.JButton btnTema6;
     private javax.swing.JButton btnTema7;
     private javax.swing.JLabel btnVolver;
+    private javax.swing.JPanel cerrar;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
     private javax.swing.JLabel imgFis;
@@ -493,6 +719,7 @@ public class temas1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
