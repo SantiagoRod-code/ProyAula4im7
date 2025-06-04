@@ -28,7 +28,7 @@ public class Parcial extends javax.swing.JFrame {
         imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
         
         if (materias.materias == 1){
-            txtNomMat.setText("Calculo diferencial");
+            txtNomMat.setText("Cálculo diferencial");
             imgCalDif.setVisible(true);
             
         }else if (materias.materias == 2){

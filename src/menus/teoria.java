@@ -30,13 +30,15 @@ public class teoria extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(144, 12, 63));
             txtNomTem.setBackground(new Color(144, 12, 63));
             
-            txtNomMat.setText("Calculo diferencial");
+            txtNomMat.setText("Cálculo diferencial");
             imgCalDif.setVisible(true);
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Definición de una Función"); // Editar nombre de tema
+                    txtTexto.setText("Una función es una relación matemática que asocia cada valor de entrada (x) con únicamente un valor de salida "
+                            + "\n(y). Esto significa que no puede haber un mismo valor de x con dos resultados distintos. Las funciones se clasifican "
+                            + "\nsegún su forma algebraica y gráfica, como: lineales, cuadráticas, racionales, de valor absoluto y constantes.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
@@ -306,7 +308,7 @@ public class teoria extends javax.swing.JFrame {
                 txtNomTemActionPerformed(evt);
             }
         });
-        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 170, 40));
+        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 550, 40));
 
         imgCalDif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/CalDif.png"))); // NOI18N
         jPanel2.add(imgCalDif, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
@@ -349,6 +351,7 @@ public class teoria extends javax.swing.JFrame {
 
         txtTexto.setEditable(false);
         txtTexto.setColumns(20);
+        txtTexto.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         txtTexto.setRows(5);
         txtTexto.setBorder(null);
 

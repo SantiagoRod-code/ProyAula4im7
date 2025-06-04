@@ -66,20 +66,22 @@ public class ejercicio extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(144, 12, 63));
             txtNomTem.setBackground(new Color(144, 12, 63));
             
-            txtNomMat.setText("Calculo diferencial");
+            txtNomMat.setText("Cálculo diferencial");
             imgCalDif.setVisible(true);
             
             if (Parcial.parcial == 1){  // Detector parcial
                 
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtNomTem.setText("Definición de una Función"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio");  
+                        txtTexto.setText("Determina si la siguiente relación es una función:\n\n" +
+                        "(3,9),(6,12),(3,−1)");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio");  
+                        txtTexto.setText("Clasifica el tipo de función:\n\n" +
+                        "f(x) = |x − 2|");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 2){
@@ -557,7 +559,7 @@ public class ejercicio extends javax.swing.JFrame {
                 txtNomTemActionPerformed(evt);
             }
         });
-        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 170, 40));
+        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 400, 40));
 
         imgCalDif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/CalDif.png"))); // NOI18N
         jPanel2.add(imgCalDif, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
@@ -581,7 +583,7 @@ public class ejercicio extends javax.swing.JFrame {
                 txtNomMatActionPerformed(evt);
             }
         });
-        jPanel2.add(txtNomMat, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 230, 40));
+        jPanel2.add(txtNomMat, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 250, 40));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 130));
 
@@ -612,7 +614,7 @@ public class ejercicio extends javax.swing.JFrame {
 
         txtTexto.setEditable(false);
         txtTexto.setColumns(20);
-        txtTexto.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtTexto.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txtTexto.setRows(5);
         txtTexto.setBorder(null);
 
@@ -751,23 +753,27 @@ public class ejercicio extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVolverMouseClicked
 
     private void btnSiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSiguienteMouseClicked
-        String respuestaTexto = txtRespuesta.getText().trim();
+        String respuestaTexto = txtRespuesta.getText().trim(); 
 
         boolean esNumero = false;
-        int respuestaNumero = -1;
+        double respuestaNumero = -1;
 
         try {
-            respuestaNumero = Integer.parseInt(respuestaTexto);
-            esNumero = true;
-        } catch (NumberFormatException ex) {
-            
+            java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("^\\d+(\\.\\d+)?").matcher(respuestaTexto); 
+            if (matcher.find()) {
+                String numeroExtraido = matcher.group(); 
+                respuestaNumero = Double.parseDouble(numeroExtraido); 
+                esNumero = true; 
+            } 
+        }catch (NumberFormatException ex) {
+            JOptionPane.showOptionDialog(null, "La respuesta no es valida", "Error", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
         }
         
         if (materias.materias == 1){
             if(Parcial.parcial == 1){
                 if (temas1.tema == 1){
                     if (teoria.avance == 3){
-                        if (esNumero && respuestaNumero == 1) { //Verificador de numero
+                        if (esNumero && respuestaNumero == 1234512345) { //Verificador de numero
                             teoria.avance = teoria.avance + 1;
                             
                             JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
@@ -775,7 +781,7 @@ public class ejercicio extends javax.swing.JFrame {
                             abrir.setVisible(true);
                             dispose();
                             
-                        }else if (!esNumero && respuestaTexto.equalsIgnoreCase("uno")) {   // Verificador texto
+                        }else if (!esNumero && respuestaTexto.equalsIgnoreCase("No")|| respuestaTexto.equals("No se pongan lo que quieran")) {   // Verificador texto
                              teoria.avance = teoria.avance + 1;
                              
                             JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
@@ -787,7 +793,7 @@ public class ejercicio extends javax.swing.JFrame {
                             JOptionPane.showOptionDialog(null, "La respuesta es incorrecta vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                         }
                     } else if (teoria.avance == 4){
-                        if (esNumero && respuestaNumero == 2) { //Verificador de numero
+                        if (esNumero && respuestaNumero == 1234512345) { //Verificador de numero
                             tem1Fin1 = 1;
                             teoria.avance = 0;
                             
@@ -798,7 +804,7 @@ public class ejercicio extends javax.swing.JFrame {
                             abrir.setVisible(true);
                             dispose();
                             
-                        }else if (!esNumero && respuestaTexto.equalsIgnoreCase("dos")) {   // Verificador texto
+                        }else if (!esNumero && respuestaTexto.equalsIgnoreCase("valor absoluto")|| respuestaTexto.equals("segunda respuesta")) {   // Verificador texto
                             tem1Fin1 = 1;
                             teoria.avance = 0;
                              

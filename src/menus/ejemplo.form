@@ -145,7 +145,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="50" y="80" width="170" height="40"/>
+                  <AbsoluteConstraints x="50" y="80" width="500" height="40"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -216,7 +216,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="20" y="30" width="230" height="40"/>
+                  <AbsoluteConstraints x="20" y="30" width="340" height="40"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -250,8 +250,8 @@
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace pref="56" max="32767" attributes="0"/>
-                          <Component id="txtTexto" min="-2" pref="686" max="-2" attributes="0"/>
-                          <EmptySpace pref="58" max="32767" attributes="0"/>
+                          <Component id="txtTexto" min="-2" pref="701" max="-2" attributes="0"/>
+                          <EmptySpace pref="43" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>

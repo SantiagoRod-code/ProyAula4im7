@@ -59,7 +59,7 @@ public class materias extends javax.swing.JFrame {
         btnCalDif.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnCalDif.setForeground(new java.awt.Color(255, 255, 255));
         btnCalDif.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnCalDif.setText("Calculo Diferencial");
+        btnCalDif.setText("Cálculo Diferencial");
         btnCalDif.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCalDif.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

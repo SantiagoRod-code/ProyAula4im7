@@ -28,20 +28,31 @@ public class ejemplo extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(144, 12, 63));
             txtNomTem.setBackground(new Color(144, 12, 63));
             
-            txtNomMat.setText("Calculo diferencial");
+            txtNomMat.setText("Cálculo diferencial");
             imgCalDif.setVisible(true);
             
             if (Parcial.parcial == 1){  // Detector parcial
                 
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtNomTem.setText("Definición de una Función"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
-                        txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtInstru.setText("Relación: {(1, 3), (2, 5), (3, 7)}");  
+                        txtTexto.setText("Esta relación está compuesta por tres pares ordenados: cada uno tiene una entrada (x) y una salida (y).\n" +
+                        "El número 1 se relaciona con el número 3.\n" +
+                        "El número 2 se relaciona con el número 5.\n" +
+                        "El número 3 se relaciona con el número 7.\n" +
+                        "Observamos que cada número de entrada es único, es decir, no se repite ningún valor de x.\n" +
+                        "Además, cada entrada tiene una sola salida, por lo tanto, cumple con la definición de función.\n\n"+
+                        "✅ Sí es una función, porque a cada valor de entrada (x) le corresponde exactamente un valor de salida (y)"); //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter
                     } else {
-                        txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtInstru.setText("Relación: (4,2),(4,5),(5,6)");  
+                        txtTexto.setText("El número 4 se relaciona con el número 2.\n" +
+                        "El mismo número 4 también se relaciona con el número 5.\n" +
+                        "El número 5 se relaciona con el número 6.\n" +
+                        "Aquí podemos ver que el número 4 aparece dos veces como entrada, pero con dos salidas diferentes.\n" +
+                        "Esto viola la regla de las funciones, porque una función no permite que una misma entrada tenga \nmás de una salida.\n\n"+
+                        "❌ No es una función, porque la entrada 4 tiene dos resultados distintos, lo cual no está permitido en una función matemática.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 2){
@@ -519,7 +530,7 @@ public class ejemplo extends javax.swing.JFrame {
                 txtNomTemActionPerformed(evt);
             }
         });
-        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 170, 40));
+        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 500, 40));
 
         imgCalDif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/CalDif.png"))); // NOI18N
         jPanel2.add(imgCalDif, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
@@ -543,7 +554,7 @@ public class ejemplo extends javax.swing.JFrame {
                 txtNomMatActionPerformed(evt);
             }
         });
-        jPanel2.add(txtNomMat, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 230, 40));
+        jPanel2.add(txtNomMat, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 340, 40));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 130));
 
@@ -631,8 +642,8 @@ public class ejemplo extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                     .addContainerGap(56, Short.MAX_VALUE)
-                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 686, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(58, Short.MAX_VALUE)))
+                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 701, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(43, Short.MAX_VALUE)))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

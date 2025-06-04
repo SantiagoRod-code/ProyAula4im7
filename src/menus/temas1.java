@@ -163,7 +163,7 @@ public class temas1 extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(144, 12, 63));
             txtNomPar.setBackground(new Color(144, 12, 63));
             
-            txtNomMat.setText("Calculo diferencial");
+            txtNomMat.setText("Cálculo diferencial");
             imgCalDif.setVisible(true);
             
             if (Parcial.parcial==1){
