@@ -39,6 +39,8 @@ public class materias extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        pnlConta = new javax.swing.JPanel();
+        btnConta = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -208,6 +210,32 @@ public class materias extends javax.swing.JFrame {
 
         jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 30));
 
+        pnlConta.setBackground(new java.awt.Color(71, 1, 36));
+
+        btnConta.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnConta.setForeground(new java.awt.Color(255, 255, 255));
+        btnConta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnConta.setText("Contabilidad");
+        btnConta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnConta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnContaMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlContaLayout = new javax.swing.GroupLayout(pnlConta);
+        pnlConta.setLayout(pnlContaLayout);
+        pnlContaLayout.setHorizontalGroup(
+            pnlContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnConta, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+        );
+        pnlContaLayout.setVerticalGroup(
+            pnlContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnConta, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        jPanel2.add(pnlConta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 384, 230, 30));
+
         bg.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -279,6 +307,14 @@ public class materias extends javax.swing.JFrame {
         jPanel5.setBackground(new Color(80,0,40));
     }//GEN-LAST:event_jLabel2MouseExited
 
+    private void btnContaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnContaMouseClicked
+        materias = 5;
+        
+        Parcial abrir = new Parcial();
+        abrir.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnContaMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -318,6 +354,7 @@ public class materias extends javax.swing.JFrame {
     private javax.swing.JPanel bg;
     private javax.swing.JLabel btnCalDif;
     private javax.swing.JLabel btnCalFin;
+    private javax.swing.JLabel btnConta;
     private javax.swing.JLabel btnFis;
     private javax.swing.JLabel btnQuim;
     private javax.swing.JLabel imgCecyt14;
@@ -328,6 +365,7 @@ public class materias extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel pnlCalDIf;
     private javax.swing.JPanel pnlCalFin;
+    private javax.swing.JPanel pnlConta;
     private javax.swing.JPanel pnlFis;
     private javax.swing.JPanel pnlQuim;
     // End of variables declaration//GEN-END:variables

@@ -170,16 +170,16 @@ public class ejercicio extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(4, 27, 135));
             txtNomTem.setBackground(new Color(4, 27, 135));
             
-            txtNomMat.setText("Fisica");
+            txtNomMat.setText("Física");
             imgFis.setVisible(true);
             
             if (Parcial.parcial == 1){
                     
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtNomTem.setText("Masa"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
                         txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
                         txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
@@ -372,7 +372,108 @@ public class ejercicio extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(22, 86, 35));
             txtNomTem.setBackground(new Color(22, 86, 35));
             
-            txtNomMat.setText("Quimica");
+            txtNomMat.setText("Contabilidad");
+            imgQuim.setVisible(true);
+            
+            if (Parcial.parcial == 1){
+                if (temas1.tema == 1){   // Detector tema
+                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 2){
+                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 3){
+                    txtNomTem.setText("Tema 3"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 4){
+                    txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 5){
+                    txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 6){
+                    txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 7){
+                    txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 8){
+                    txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }
+            }
+        }else if (materias.materias == 5){
+            barraTa.setBackground(new Color(85, 36, 160));
+            cerrar.setBackground(new Color(85, 36, 160));
+            jPanel2.setBackground(new Color(85, 36, 160));
+            txtNomMat.setBackground(new Color(85, 36, 160));
+            txtNomTem.setBackground(new Color(85, 36, 160));
+            
+            txtNomMat.setText("Contabilidad");
             imgQuim.setVisible(true);
             
             if (Parcial.parcial == 1){
@@ -766,7 +867,7 @@ public class ejercicio extends javax.swing.JFrame {
                 esNumero = true; 
             } 
         }catch (NumberFormatException ex) {
-            JOptionPane.showOptionDialog(null, "La respuesta no es valida", "Error", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+             JOptionPane.showOptionDialog(null, "La respuesta no es valida", "Error", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
         }
         
         if (materias.materias == 1){
@@ -837,7 +938,67 @@ public class ejercicio extends javax.swing.JFrame {
             }
         }else if(materias.materias == 2){
             if(Parcial.parcial == 1){
+                if (temas1.tema == 1){
+                    if (teoria.avance == 3){
+                        if (esNumero && respuestaNumero == 1234512345) { //Verificador de numero
+                            teoria.avance = teoria.avance + 1;
+                            
+                            JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                            ejercicio abrir = new ejercicio();
+                            abrir.setVisible(true);
+                            dispose();
+                            
+                        }else if (!esNumero && respuestaTexto.equalsIgnoreCase("No")|| respuestaTexto.equals("No se pongan lo que quieran")) {   // Verificador texto
+                             teoria.avance = teoria.avance + 1;
+                             
+                            JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                            ejercicio abrir = new ejercicio();
+                            abrir.setVisible(true);
+                            dispose();
+                            
+                        }else {// Incorrecta
+                            JOptionPane.showOptionDialog(null, "La respuesta es incorrecta vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                        }
+                    } else if (teoria.avance == 4){
+                        if (esNumero && respuestaNumero == 1234512345) { //Verificador de numero
+                            tem1Fin1 = 1;
+                            teoria.avance = 0;
+                            
+                            JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                            
+                            JOptionPane.showMessageDialog(null, "Felicidades terminaste la leccion", "Leccion terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png",40,40));
+                            temas1 abrir = new temas1();
+                            abrir.setVisible(true);
+                            dispose();
+                            
+                        }else if (!esNumero && respuestaTexto.equalsIgnoreCase("valor absoluto")|| respuestaTexto.equals("segunda respuesta")) {   // Verificador texto
+                            tem1Fin1 = 1;
+                            teoria.avance = 0;
+                             
+                            JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                            
+                            JOptionPane.showMessageDialog(null, "Felicidades terminaste la leccion", "Leccion terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png",40,40));
+                            temas1 open = new temas1();
+                            open.setVisible(true);
+                            dispose();
+                            
+                        }else {// Incorrecta
+                            JOptionPane.showOptionDialog(null, "La respuesta es incorrecta vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                        }
+                    }
+                }else if (temas1.tema == 2){
+                    
+                }else if (temas1.tema == 3){
+                    
+                }else if (temas1.tema == 4){
+                    
+                }else if (temas1.tema == 5){
                 
+                }else if (temas1.tema == 6){
+                
+                }else if (temas1.tema == 7){
+                
+                }
             }
         }else if (materias.materias == 3){
             if(Parcial.parcial == 1){
@@ -847,7 +1008,11 @@ public class ejercicio extends javax.swing.JFrame {
             if(Parcial.parcial == 1){
                 
             }
-        }    
+        }else if (materias.materias == 5){
+            if(Parcial.parcial==1){
+                
+            }
+        }
     }//GEN-LAST:event_btnSiguienteMouseClicked
 
     private void txtRespuestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRespuestaActionPerformed

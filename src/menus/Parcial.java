@@ -43,6 +43,9 @@ public class Parcial extends javax.swing.JFrame {
             txtNomMat.setText("Calculos financieros");
             imgCalFin.setVisible(true);
             
+        }else if (materias.materias == 5){
+            txtNomMat.setText("Contabilidad");
+            //imgConta.setVisible(true);
         }
     }
     

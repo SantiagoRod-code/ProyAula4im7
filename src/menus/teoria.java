@@ -82,8 +82,9 @@ public class teoria extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Masa"); // Editar nombre de tema
+                    txtTexto.setText("Es la propiedad de la materia que indica que ocupa un lugar en el espacio. \n"
+                            + "Todos los cuerpos tienen volumen, es decir, se extienden en tres dimensiones. ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
@@ -169,6 +170,52 @@ public class teoria extends javax.swing.JFrame {
             
             txtNomMat.setText("Quimica");
             imgQuim.setVisible(true);
+            
+            if (Parcial.parcial == 1){
+                if (temas1.tema == 1){
+                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                }else if (temas1.tema == 2){
+                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                }else if (temas1.tema == 3){
+                    txtNomTem.setText("Tema 3"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                }else if (temas1.tema == 4){
+                    txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                }else if (temas1.tema == 5){
+                    txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                }else if (temas1.tema == 6){
+                    txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                }else if (temas1.tema == 7){
+                    txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                }else if (temas1.tema == 8){
+                    txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    
+                }
+            }
+        
+        }else if (materias.materias == 5){
+            barraTa.setBackground(new Color(85, 36, 160));
+            cerrar.setBackground(new Color(85, 36, 160));
+            jPanel2.setBackground(new Color(85, 36, 160));
+            txtNomMat.setBackground(new Color(85, 36, 160));
+            txtNomTem.setBackground(new Color(85, 36, 160));
+            
+            txtNomMat.setText("Contabilidad");
+            //imgConta.setVisible(true);
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
@@ -351,7 +398,7 @@ public class teoria extends javax.swing.JFrame {
 
         txtTexto.setEditable(false);
         txtTexto.setColumns(20);
-        txtTexto.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        txtTexto.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txtTexto.setRows(5);
         txtTexto.setBorder(null);
 

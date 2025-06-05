@@ -212,6 +212,19 @@ public class temas1 extends javax.swing.JFrame {
                 txtNomPar.setText("Parcial 1");
             }
             
+        }else if (materias.materias == 5){
+            barraTa.setBackground(new Color(85, 36, 160));
+            cerrar.setBackground(new Color(85, 36, 160));
+            jPanel2.setBackground(new Color(85, 36, 160));
+            txtNomMat.setBackground(new Color(85, 36, 160));
+            txtNomPar.setBackground(new Color(85, 36, 160));
+            
+            txtNomMat.setText("Contabilidad");
+            //imgConta.setVisible(true);
+            
+            if (Parcial.parcial==1){
+                txtNomPar.setText("Parcial 1");
+            }
         }
     }
 
@@ -649,6 +662,8 @@ public class temas1 extends javax.swing.JFrame {
             cerrar.setBackground(new Color(22, 86, 35));
         }else if (materias.materias ==4){
             cerrar.setBackground(new Color(210, 121, 0));
+        }else if (materias.materias ==5){
+            cerrar.setBackground(new Color(60, 20, 80));
         }
     }//GEN-LAST:event_jLabel7MouseExited
 

@@ -134,24 +134,24 @@ public class ejemplo extends javax.swing.JFrame {
                     
                 }
             }
-        }else if (materias.materias == 2){
-            barraTa.setBackground(new Color(4, 27, 135));
-            cerrar.setBackground(new Color(4, 27, 135));
-            jPanel2.setBackground(new Color(4, 27, 135));
-            txtNomMat.setBackground(new Color(4, 27, 135));
-            txtNomTem.setBackground(new Color(4, 27, 135));
+        }else if (materias.materias == 5){
+            barraTa.setBackground(new Color(85, 36, 160));
+            cerrar.setBackground(new Color(85, 36, 160));
+            jPanel2.setBackground(new Color(85, 36, 160));
+            txtNomMat.setBackground(new Color(85, 36, 160));
+            txtNomTem.setBackground(new Color(85, 36, 160));
             
-            txtNomMat.setText("Fisica");
+            txtNomMat.setText("Contabilidad");
             imgFis.setVisible(true);
             
             if (Parcial.parcial == 1){
                     
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtNomTem.setText("Masa"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Una pelota de fútbol tiene una masa de 450 gramos. Aunque esté en la Tierra o en la Luna, su masa no cambia.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
                         txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
