@@ -326,12 +326,36 @@ public class Parcial extends javax.swing.JFrame {
     //Boton parcial 2
     private void btnPar2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPar2MouseClicked
         parcial=2;
-        JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        if (materias.materias ==1){
+            JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        }else if (materias.materias == 2){
+           temas1 abrir = new temas1();
+           abrir.setVisible(true);
+           dispose();
+        }else if (materias.materias == 3){
+            JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        }else if (materias.materias == 4){
+            JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        }else if (materias.materias == 5){
+            JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        }
     }//GEN-LAST:event_btnPar2MouseClicked
 
     private void btnPar3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPar3MouseClicked
         parcial=3;
-        JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        if (materias.materias ==1){
+            JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        }else if (materias.materias == 2){
+           temas1 abrir = new temas1();
+           abrir.setVisible(true);
+           dispose();
+        }else if (materias.materias == 3){
+            JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        }else if (materias.materias == 4){
+            JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        }else if (materias.materias == 5){
+            JOptionPane.showMessageDialog(null, mensaje, "Alerta", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/alerta.png",40,40));
+        }
     }//GEN-LAST:event_btnPar3MouseClicked
 
     private void txtNomMatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomMatActionPerformed

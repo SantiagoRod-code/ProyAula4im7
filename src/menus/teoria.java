@@ -1,5 +1,5 @@
 
-package menus; //not cuming side 
+package menus;
 
 import java.awt.Color;
 import javax.swing.Icon;
@@ -77,22 +77,37 @@ public class teoria extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(4, 27, 135));
             txtNomTem.setBackground(new Color(4, 27, 135));
             
-            txtNomMat.setText("Fisica");
+            txtNomMat.setText("Fìsica");
             imgFis.setVisible(true);
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
-                    txtNomTem.setText("Masa"); // Editar nombre de tema
-                    txtTexto.setText("Es la propiedad de la materia que indica que ocupa un lugar en el espacio. \n"
-                            + "Todos los cuerpos tienen volumen, es decir, se extienden en tres dimensiones. ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Ley de hooke"); // Editar nombre de tema
+                    txtTexto.setText("La Ley de Hooke describe cómo se comportan los resortes.\n" +
+                    "Establece que la fuerza es proporcional a la elongación.\n" +
+                    "Se expresa como F = -k·x, donde \"k\" es la constante del resorte.\n" +
+                    "\"x\" es el alargamiento respecto a la posición de equilibrio.\n" +
+                    "Solo se cumple dentro del límite elástico del material.\n" +
+                    "La fuerza restauradora siempre actúa en sentido opuesto.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Módulo de Young"); // Editar nombre de tema
+                    txtTexto.setText("El Módulo de Young mide la rigidez de un material.\n" +
+                    "Se representa con la letra \"E\" y su unidad es el pascal (Pa).\n" +
+                    "E = (F·L)/(A·ΔL), donde:\n" +
+                    "F = fuerza, L = longitud original,\n" +
+                    "A = área transversal, ΔL = elongación.\n" +
+                    "Materiales con mayor E son menos deformables.\n" +
+                    "Ej: el acero tiene un alto módulo de Young.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 3){
-                    txtNomTem.setText("Tema 3"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Densidad"); // Editar nombre de tema
+                    txtTexto.setText("La densidad relaciona la masa y el volumen de un cuerpo.\n" +
+                    "Se expresa como ρ = m/V, unidad: kg/m³ o g/cm³.\n" +
+                    "Materiales diferentes tienen densidades distintas.\n" +
+                    "El agua tiene una densidad de 1000 kg/m³.\n" +
+                    "Un objeto flota si su densidad es menor que la del agua.\n" +
+                    "Es útil para identificar sustancias.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema

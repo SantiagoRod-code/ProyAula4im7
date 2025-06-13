@@ -56,7 +56,7 @@ public class ejemplo extends javax.swing.JFrame {
                     }
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtNomTem.setText("Tema 2"); // Editatr nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
@@ -379,6 +379,122 @@ public class ejemplo extends javax.swing.JFrame {
                     } else {
                         txtInstru.setText("Ejemplo 2");  
                         txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 4){
+                    txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 5){
+                    txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 6){
+                    txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 7){
+                    txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 8){
+                    txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }
+            }
+        }else if (materias.materias == 2){
+            barraTa.setBackground(new Color(4, 27, 135));
+            cerrar.setBackground(new Color(4, 27, 135));
+            jPanel2.setBackground(new Color(4, 27, 135));
+            txtNomMat.setBackground(new Color(4, 27, 135));
+            txtNomTem.setBackground(new Color(4, 27, 135));
+            
+            txtNomMat.setText("Fìsica");
+            imgFis.setVisible(true);
+            
+            if (Parcial.parcial == 1){
+                if (temas1.tema == 1){   // Detector tema
+                    txtNomTem.setText("Ley de hooke"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("Un resorte tiene k = 200 N/m y se estira 0.1 m.\n" +
+                        "F = -k·x = -200·0.1 = -20 N\n" +
+                        "El signo negativo indica fuerza opuesta al alargamiento.\n" +
+                        "La fuerza restauradora es de 20 N hacia el equilibrio.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("Si una masa de 2 kg cuelga de un resorte, ¿cuánto se estira?\n" +
+                        "F = m·g = 2·9.8 = 19.6 N\n" +
+                        "Si k = 245 N/m, entonces x = F/k = 19.6/245 = 0.08 m\n" +
+                        "El resorte se alarga 8 cm debido al peso de la masa.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 2){
+                    txtNomTem.setText("Módulo de Young"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("Un alambre de 1 m se alarga 1 mm con 500 N de fuerza.\n" +
+                        "A = 1 mm² = 1×10⁻⁶ m², ΔL = 0.001 m, L = 1 m\n" +
+                        "E = (500×1)/(1×10⁻⁶ × 0.001) = 5×10¹¹ Pa\n" +
+                        "Muestra un material muy rígido, como el acero.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("Una barra de 2 m y área 0.01 m² se alarga 0.002 m.\n" +
+                        "F = 200 N, E = (200×2)/(0.01×0.002) = 2×10⁷ Pa\n" +
+                        "Un valor bajo indica material más elástico.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                    
+                }else if (temas1.tema == 3){
+                    txtNomTem.setText("Densidad"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("Una piedra pesa 500 g y ocupa 200 cm³.\n" +
+                        "ρ = m/V = 500/200 = 2.5 g/cm³\n" +
+                        "Como es más densa que el agua, se hunde.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("Un cilindro de masa 2 kg y volumen 0.001 m³.\n" +
+                        "ρ = 2 / 0.001 = 2000 kg/m³\n" +
+                        "Es más denso que el agua, no flota.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 4){

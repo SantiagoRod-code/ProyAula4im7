@@ -47,38 +47,108 @@ public class temas1 extends javax.swing.JFrame {
                 btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
             }
         } else if (materias.materias == 2){
-            if (ejercicio.tem2Fin1 == 1){
-                btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
-                btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
-                btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
-            } else if (ejercicio.tem2Fin2 == 1 ){
-                btnTema1.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
-                btnTema1.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
-                btnTema1.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
-            } else if (ejercicio.tem2Fin3 == 1 ){
-                btnTema2.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
-                btnTema2.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
-                btnTema2.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
-            } else if (ejercicio.tem2Fin4 == 1 ){
-                btnTema3.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
-                btnTema3.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
-                btnTema3.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
-            } else if (ejercicio.tem2Fin5 == 1 ){
-                btnTema4.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
-                btnTema4.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
-                btnTema4.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
-            } else if (ejercicio.tem2Fin6 == 1 ){
-                btnTema5.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
-                btnTema5.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
-                btnTema5.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
-            } else if (ejercicio.tem2Fin7 == 1 ){
-                btnTema6.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
-                btnTema6.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
-                btnTema6.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
-            } else if (ejercicio.tem2Fin8 == 1 ){
-                btnTema7.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
-                btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
-                btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            if (Parcial.parcial == 1){
+                if (ejercicio.tem2p1Fin1 == 1){
+                    btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p1Fin2 == 1 ){
+                    btnTema1.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema1.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema1.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p1Fin3 == 1 ){
+                    btnTema2.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema2.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema2.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p1Fin4 == 1 ){
+                    btnTema3.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema3.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema3.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p1Fin5 == 1 ){
+                    btnTema4.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema4.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema4.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p1Fin6 == 1 ){
+                    btnTema5.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema5.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema5.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p1Fin7 == 1 ){
+                    btnTema6.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema6.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema6.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p1Fin8 == 1 ){
+                    btnTema7.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                }
+            }else if (Parcial.parcial ==2){
+                if (ejercicio.tem2p2Fin1 ==1){
+                    btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p2Fin2 == 1 ){
+                    btnTema1.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema1.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema1.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p2Fin3 == 1 ){
+                    btnTema2.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema2.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema2.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p2Fin4 == 1 ){
+                    btnTema3.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema3.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema3.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p2Fin5 == 1 ){
+                    btnTema4.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema4.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema4.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p2Fin6 == 1 ){
+                    btnTema5.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema5.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema5.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p2Fin7 == 1 ){
+                    btnTema6.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema6.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema6.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p2Fin8 == 1 ){
+                    btnTema7.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                }
+            }else if (Parcial.parcial ==3){
+                if (ejercicio.tem2p3Fin1 ==1){
+                    btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p3Fin2 == 1 ){
+                    btnTema1.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema1.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema1.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p3Fin3 == 1 ){
+                    btnTema2.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema2.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema2.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p3Fin4 == 1 ){
+                    btnTema3.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema3.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema3.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p3Fin5 == 1 ){
+                    btnTema4.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema4.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema4.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p3Fin6 == 1 ){
+                    btnTema5.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema5.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema5.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p3Fin7 == 1 ){
+                    btnTema6.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema6.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema6.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                } else if (ejercicio.tem2p3Fin8 == 1 ){
+                    btnTema7.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                    btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                    btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+                }
             }
         } else if (materias.materias == 3){
             if (ejercicio.tem3Fin1 == 1){
@@ -182,6 +252,10 @@ public class temas1 extends javax.swing.JFrame {
             
             if (Parcial.parcial==1){
                 txtNomPar.setText("Parcial 1");
+            }else if (Parcial.parcial==2){
+                txtNomPar.setText("Parcial 2");
+            }else if (Parcial.parcial==3){
+                txtNomPar.setText("Parcial 3");
             }
             
         }else if (materias.materias == 3){
