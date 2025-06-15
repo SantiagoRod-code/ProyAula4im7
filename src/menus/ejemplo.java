@@ -498,58 +498,82 @@ public class ejemplo extends javax.swing.JFrame {
                     }
                     
                 }else if (temas1.tema == 4){
-                    txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    txtNomTem.setText("Presión Hidrostática"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Un buzo está a 5 m bajo el agua.\n" +
+                        "Densidad del agua: 1000 kg/m³\n" +
+                        "Presión: P = 1000×9.81×5 = 49050 Pa\n" +
+                        "Esa es la presión que siente el buzo.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("En una piscina, a 2 m de profundidad:\n" +
+                        "P = 1000×9.81×2 = 19620 Pa\n" +
+                        "Presión aumenta con la profundidad.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 5){
-                    txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    txtNomTem.setText("Principio de Pascal"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Una fuerza de 10 N sobre un pistón pequeño\n" +
+                        "se transmite al pistón grande.\n" +
+                        "El pistón grande ejerce más fuerza.\n" +
+                        "Se basa en que P = F/A es constante.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("En un gato hidráulico, el área del pistón\n" +
+                        "grande es 5 veces mayor.\n" +
+                        "La fuerza transmitida se multiplica por 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 6){
-                    txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    txtNomTem.setText("Principio de Arquímedes"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Un bloque de 2 L de volumen en agua:\n" +
+                        "E = 1000×9.81×0.002 = 19.62 N\n" +
+                        "Empuje compensa su peso parcialmente.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Un objeto flota si el empuje ≥ su peso.\n" +
+                        "Si se hunde, el empuje es menor que el peso");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 7){
-                    txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    txtNomTem.setText("Viscosidad"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("La miel fluye más lento que\n" +
+                        "el agua debido a su alta viscosidad. 2. El aceite de motor cambia su viscosidad con\n" +
+                        "la temperatura: se vuelve más fluido cuando se calienta.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("La lava fluye lentamente por su alta viscosidad,\n" +
+                        "lo que le impide desplazarse con rapidez.\n" +
+                        "El jarabe se vuelve más líquido al calentarse,\n" +
+                        "pues la temperatura reduce su viscosidad.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 8){
-                    txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    txtNomTem.setText("Prensa hidràulica"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Un elevador hidráulico puede levantar autos aplicando una fuerza\n" +
+                        "pequeña sobre un émbolo delgado. El fluido transmite la presión\n" +
+                        "a un émbolo más grande, multiplicando la fuerza según el principio\n" +
+                        "de Pascal. Esto permite levantar objetos muy pesados con poco esfuerzo.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Una prensa hidráulica comprime materiales al aplicar presión en\n" +
+                        "un émbolo pequeño. Esta presión se transmite a otro de mayor área,\n" +
+                        "generando una fuerza mucho mayor. Así, se pueden moldear o cortar\n" +
+                        "materiales sólidos con gran eficacia y precisión.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }
@@ -701,6 +725,7 @@ public class ejemplo extends javax.swing.JFrame {
 
         txtTexto.setEditable(false);
         txtTexto.setColumns(20);
+        txtTexto.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtTexto.setRows(5);
         txtTexto.setBorder(null);
 

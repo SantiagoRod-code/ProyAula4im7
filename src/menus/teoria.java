@@ -82,6 +82,7 @@ public class teoria extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
+                    img.setIcon(new ImageIcon(getClass().getResource("/imgFis/leyHo.png"))); 
                     txtNomTem.setText("Ley de hooke"); // Editar nombre de tema
                     txtTexto.setText("La Ley de Hooke describe cómo se comportan los resortes.\n" +
                     "Establece que la fuerza es proporcional a la elongación.\n" +
@@ -110,26 +111,82 @@ public class teoria extends javax.swing.JFrame {
                     "Es útil para identificar sustancias.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 4){
-                    txtNomTem.setText("Tema 4"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Presión Hidrostática"); // Editar nombre de tema
+                    txtTexto.setText("La presión hidrostática es causada por el peso\n" +
+                    "del líquido sobre un punto sumergido.\n" +
+                    "Depende de la profundidad, densidad y gravedad.\n" +
+                    "Se calcula con la fórmula: P = ρgh\n" +
+                    "ρ: densidad del líquido (kg/m³)\n" +
+                    "g: gravedad (9.81 m/s²)\n" +
+                    "h: profundidad (m)\n" +
+                    "Actúa en todas las direcciones por igual.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 5){
-                    txtNomTem.setText("Tema 5"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Principio de Pascal"); // Editar nombre de tema
+                    txtTexto.setText("El principio de Pascal dice que la presión\n" +
+                    "aplicada a un fluido en reposo se transmite\n" +
+                    "uniformemente en todas las direcciones.\n" +
+                    "Se usa en sistemas hidráulicos.\n" +
+                    "Permite multiplicar fuerzas con pistones.\n" +
+                    "Muy útil en frenos y gatos hidráulicos.\n" +
+                    "No depende del área ni forma del recipiente.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 6){
-                    txtNomTem.setText("Tema 6"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Principio de Arquímedes"); // Editar nombre de tema
+                    txtTexto.setText("Todo cuerpo sumergido en un fluido\n" +
+                    "recibe un empuje hacia arriba.\n" +
+                    "Este empuje equivale al peso del\n" +
+                    "fluido desplazado por el cuerpo.\n" +
+                    "Es por eso que los objetos flotan o se hunden.\n" +
+                    "Empuje: E = ρ·g·V desplazado");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 7){
-                    txtNomTem.setText("Tema 7"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Viscosidad"); // Editar nombre de tema
+                    txtTexto.setText("La viscosidad es la resistencia que presentan los fluidos (líquidos o gases) al\n" +
+                    "movimiento o al flujo. Esta resistencia se debe a la fricción interna entre las\n" +
+                    "moléculas del fluido. Cuanto mayor es la viscosidad, más difícilmente fluye el fluido\n" +
+                    "y más lentamente se mueve. Por ejemplo, la miel tiene una viscosidad alta y fluye\n" +
+                    "con lentitud, mientras que el agua tiene una viscosidad baja y fluye con facilidad.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 8){
-                    txtNomTem.setText("Tema 8"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Prensa hidràulica"); // Editar nombre de tema
+                    txtTexto.setText("La prensa hidráulica funciona según el principio de Pascal, el cual establece que la\n" +
+                    "presión aplicada en un punto de un fluido incompresible se transmite de forma\n" +
+                    "uniforme en todas las direcciones dentro del fluido. Gracias a esto, una pequeña\n" +
+                    "fuerza aplicada en un pistón pequeño puede generar una fuerza mucho mayor en\n" +
+                    "otro pistón más grande, multiplicando el efecto\n\n"
+                            + "Fórmula: F1 / A1 = F2 / A2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                }
+            }else if (Parcial.parcial ==2){
+                if (temas1.tema == 1){
+                    txtNomTem.setText("Estado gaseoso");
+                    txtTexto.setText("El estado gaseoso se caracteriza por tener forma y volumen variables, ya que los\n" +
+                    "gases se expanden para ocupar completamente el recipiente que los contiene. Las\n" +
+                    "partículas en un gas están muy separadas entre sí y se mueven de manera\n" +
+                    "continua, rápida y desordenada, lo que les permite fluir y comprimirse con facilidad.\n\n"
+                    + "Leyes importantes: - Ley de Boyle: P1V1 = P2V2 (a temperatura constante) - Ley\n" +
+                    "de Charles: V1/T1 = V2/T2 (a presión constante) - Ecuación general de gases:\n" +
+                    "PV = nRT");
+                }
+                else if (temas1.tema == 2){
+                    txtNomTem.setText("Estado gaseoso");
+                    txtTexto.setText("La temperatura indica cuánta energía cinética tienen las partículas.\n" +
+                    "A mayor movimiento molecular, mayor será la temperatura registrada.\n" +
+                    "Se mide con termómetro en °C, °F y K, según la escala usada.\n" +
+                    "Kelvin inicia en cero absoluto; Celsius y °F dependen del agua.\n" +
+                    "Para convertir escalas se aplican fórmulas matemáticas simples\n\n"
+                  + "C° → K° = c+273                        K° → F° = 1.8 (k-273.15)+32\n" +
+                    "k° → C° = k-273                        \"C° → F° = 1.8 c +32\n" +
+                    "F° → K° = (5/9) (f-32) + 273.15     \"F° → C° = F-32/1.8\"" );
+                }
+                else if (temas1.tema == 3){
                     
                 }
+                else if (temas1.tema == 4){}
+                else if (temas1.tema == 5){}
+                else if (temas1.tema == 6){}
+                else if (temas1.tema == 7){}
+                else if (temas1.tema == 8){}
             }
         }else if (materias.materias == 4){
             barraTa.setBackground(new Color(210, 121, 0));
@@ -291,6 +348,7 @@ public class teoria extends javax.swing.JFrame {
         txtTexto = new javax.swing.JTextArea();
         jPanel5 = new javax.swing.JPanel();
         btnSiguiente = new javax.swing.JLabel();
+        img = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -387,6 +445,7 @@ public class teoria extends javax.swing.JFrame {
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 130));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel4.setBackground(new java.awt.Color(153, 153, 153));
 
@@ -411,11 +470,14 @@ public class teoria extends javax.swing.JFrame {
             .addComponent(btnVolver, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
         );
 
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 345, -1, -1));
+
         txtTexto.setEditable(false);
         txtTexto.setColumns(20);
         txtTexto.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txtTexto.setRows(5);
         txtTexto.setBorder(null);
+        jPanel3.add(txtTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 49, 605, 254));
 
         jPanel5.setBackground(new java.awt.Color(153, 153, 153));
 
@@ -433,44 +495,19 @@ public class teoria extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 11, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 15, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 582, Short.MAX_VALUE)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(56, Short.MAX_VALUE)
-                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 697, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(47, Short.MAX_VALUE)))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(345, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(49, Short.MAX_VALUE)
-                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(67, Short.MAX_VALUE)))
-        );
+        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 340, 120, 40));
+        jPanel3.add(img, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 110, 160, 110));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 800, 370));
 
@@ -601,6 +638,7 @@ public class teoria extends javax.swing.JFrame {
     private javax.swing.JLabel btnSiguiente;
     private javax.swing.JLabel btnVolver;
     private javax.swing.JPanel cerrar;
+    private javax.swing.JLabel img;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
     private javax.swing.JLabel imgFis;

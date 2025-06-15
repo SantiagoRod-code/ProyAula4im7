@@ -230,58 +230,68 @@ public class ejercicio extends javax.swing.JFrame {
                     }
                     
                 }else if (temas1.tema == 4){
-                    txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    txtNomTem.setText("Presión Hidrostática"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Calcula la presión a 3 m bajo el agua.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("¿Qué pasa si duplicamos la profundidad?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 5){
-                    txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    txtNomTem.setText("Principio de Pascal"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Área chica = 2 cm², fuerza = 20 N\n" +
+                        "Área grande = 10 cm²\n"+
+                        "¿Cuàl es la fuerza transmitida?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Si duplico el área del pistón grande,\n" +
+                        "¿qué pasa con la fuerza?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 6){
-                    txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    txtNomTem.setText("Principio de Arquímedes"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Un cuerpo desplaza 0.005 m³ de agua\n"
+                                + "Calcula el empuje");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Un objeto pesa 30 N y recibe un empuje\n" +
+                        "de 35 N. ¿Flota?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 7){
-                    txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    txtNomTem.setText("Viscosidad"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Un líquido tiene una viscosidad de 0.89 Pa·s. ¿Qué tipo de fluido podría\n" +
+                        "ser si se comporta como el agua a 25°C?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Se hace fluir glicerina (viscosidad 1.5 Pa·s) y agua (0.001 Pa·s) por un\n" +
+                        "mismo tubo bajo la misma presión. ¿Cuál fluirá más rápido?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("En una prensa hidráulica, el émbolo pequeño tiene un área de 10 cm² y\n" +
+                        "se aplica una fuerza de 100 N. Si el émbolo grande tiene un área de 200 cm², ¿cuál\n" +
+                        "es la fuerza generada en el émbolo grande?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Se necesita levantar una carga de 5000 N y el área del pistón mayor es\n" +
+                        "de 250 cm². ¿Qué fuerza se debe aplicar en un pistón de 25 cm²?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }
@@ -934,8 +944,287 @@ public class ejercicio extends javax.swing.JFrame {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 }
-            }
+           }
+        } 
+    }else if (materias.materias == 2){
+        if (Parcial.parcial == 1) {
+            if (temas1.tema == 1) {
+                if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("5N")) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin1 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("0.04m") || respuestaTexto.equals("40mm")) {
+                        tem2p1Fin1 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+           }else if (temas1.tema == 2){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23082008) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("5×10⁷Pa")|| respuestaTexto.equals("5x10^7Pa")|| respuestaTexto.equals("50000000pa")) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin2 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("1×10⁵N") || respuestaTexto.equals("1×10^5N")|| respuestaTexto.equals("100000N")) {
+                        tem2p1Fin2 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+           }else if (temas1.tema == 3){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23082008) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("5g/cm³")|| respuestaTexto.equals("5g/cm^3")) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin3 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("200g")) {
+                        tem2p1Fin2 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+           }else if (temas1.tema == 4){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23082008) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("29430Pa")) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin4 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("se duplica")|| respuestaTexto.equals("duplica")) {
+                        tem2p1Fin4 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+           }else if (temas1.tema == 5){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23082008) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("100N")) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin5 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("se duplica")|| respuestaTexto.equals("duplica")) {
+                        tem2p1Fin5 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+           }else if (temas1.tema == 6){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23082008) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("49.05N")) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin6 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("si")) {
+                        tem2p1Fin6 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+           }else if (temas1.tema == 7){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23082008) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("agua")|| respuestaTexto.equals("el agua")) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin7 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("agua")|| respuestaTexto.equals("el agua")) {
+                        tem2p1Fin7 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+           }else if (temas1.tema == 8){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23082008) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("2000N")) {
+                        teoria.avance++;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        new ejercicio().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin8 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else if (respuestaTexto.equalsIgnoreCase("500N")) {
+                        tem2p1Fin8 = 1;
+                        teoria.avance = 0;
+                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+                        new temas1().setVisible(true);
+                        dispose();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+           }
         }
+    }else if (materias.materias == 3){
+    }else if (materias.materias == 4){
+    }else if (materias.materias == 5){
     }
 
     }//GEN-LAST:event_btnSiguienteMouseClicked
