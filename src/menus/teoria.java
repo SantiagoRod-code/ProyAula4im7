@@ -21,7 +21,7 @@ public class teoria extends javax.swing.JFrame {
         txtNomTem.setEditable(false);
         txtNomMat.setEditable(false);
         
-        imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
+        imgConta.setVisible(false);imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
         
         if (materias.materias == 1){
             barraTa.setBackground(new Color(144, 12, 63));
@@ -36,38 +36,67 @@ public class teoria extends javax.swing.JFrame {
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
                     txtNomTem.setText("Definición de una Función"); // Editar nombre de tema
-                    txtTexto.setText("Una función es una relación matemática que asocia cada valor de entrada (x) con únicamente un valor de salida "
-                            + "\n(y). Esto significa que no puede haber un mismo valor de x con dos resultados distintos. Las funciones se clasifican "
-                            + "\nsegún su forma algebraica y gráfica, como: lineales, cuadráticas, racionales, de valor absoluto y constantes.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtTexto.setText("Una función asigna a cada entrada un único valor de salida posible.\n" +
+                    "El conjunto de partida se llama dominio; el de llegada, codominio.\n" +
+                    "No puede haber dos salidas diferentes para una misma entrada.\n" +
+                    "Se clasifican como lineales, cuadráticas, racionales, entre otras.\n" +
+                    "El valor absoluto, por ejemplo, define una función no lineal.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Representación gráfica de funciones"); // Editar nombre de tema
+                    txtTexto.setText("Una función se grafica usando pares ordenados (x, f(x)) en el plano.\n" +
+                    "Las gráficas permiten visualizar su comportamiento y propiedades.\n" +
+                    "f(x) = x² tiene forma de parábola abierta hacia arriba.\n" +
+                    "f(x) = |x| es una gráfica con forma de \"V\" simétrica.\n" +
+                    "El criterio de la recta vertical permite verificar si es función.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 3){
-                    txtNomTem.setText("Tema 3"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Evaluación y operaciones con funciones"); // Editar nombre de tema
+                    txtTexto.setText("Evaluar significa sustituir x por un valor en la función dada.\n" +
+                    "Las funciones se pueden sumar, restar, multiplicar o dividir.\n" +
+                    "(f + g)(x) se obtiene sumando f(x) y g(x).\n" +
+                    "Igual ocurre con resta o multiplicación: operar por componentes.\n" +
+                    "Es útil para combinar modelos o simplificar expresiones.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 4){
-                    txtNomTem.setText("Tema 4"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 4");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Noción de límite y sus teoremas"); // Editar nombre de tema
+                    txtTexto.setText("El límite es el valor que f(x) se aproxima cuando x tiende a un número.\n" +
+                    "Se puede calcular por sustitución directa si no hay indeterminaciones.\n" +
+                    "Algunas propiedades: suma, resta, producto y cociente de límites.\n" +
+                    "Los límites existen si la función es continua en ese punto.\n" +
+                    "También pueden ser usados para describir el comportamiento cercano.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 5){
-                    txtNomTem.setText("Tema 5"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 5");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Tipos de límites y formas indeterminadas"); // Editar nombre de tema
+                    txtTexto.setText("Límites pueden ser laterales, infinitos o hacia infinito.\n" +
+                    "Las formas indeterminadas como 0/0 requieren simplificación.\n" +
+                    "Se puede usar factorización, conjugada o división por x.\n" +
+                    "Los límites infinitos implican crecimiento o decrecimiento sin fin.\n" +
+                    "Las indeterminaciones se resuelven antes de evaluar.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 6){
-                    txtNomTem.setText("Tema 6"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 6");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Aplicación de los teoremas de límites"); // Editar nombre de tema
+                    txtTexto.setText("Los teoremas permiten evaluar límites de forma estructurada.\n" +
+                    "Se puede usar factorización, simplificación o propiedades.\n" +
+                    "Cuando hay indeterminación, se deben transformar las expresiones.\n" +
+                    "Los polinomios permiten sustitución directa por su continuidad.\n" +
+                    "Los cocientes requieren más cuidado y frecuentemente factorización.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 7){
-                    txtNomTem.setText("Tema 7"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 7");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Continuidad y discontinuidad de una función"); // Editar nombre de tema
+                    txtTexto.setText("Una función es continua si no hay saltos ni huecos en su gráfica.\n" +
+                    "Tres condiciones: f(a) existe, el límite existe, ambos son iguales.\n" +
+                    "Los polinomios son continuos en todos los reales.\n" +
+                    "Las racionales pueden ser discontinuas donde el denominador es 0.\n" +
+                    "Gráficamente se puede trazar sin levantar el lápiz.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 8){
-                    txtNomTem.setText("Tema 8"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 8");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
-                    
+                    txtNomTem.setText(" Intervalos de continuidad o discontinuidad"); // Editar nombre de tema
+                    txtTexto.setText("La continuidad depende de dónde está definida la función.\n" +
+                    "Se debe analizar el dominio para encontrar intervalos continuos.\n" +
+                    "Se interrumpe donde hay raíces negativas o divisiones por cero.\n" +
+                    "Las funciones racionales son discontinuas donde el denominador vale 0.\n" +
+                    "Funciones raíz cuadrada requieren contenido ≥ 0.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)                    
                 }
             }
         }else if (materias.materias == 2){
@@ -102,6 +131,7 @@ public class teoria extends javax.swing.JFrame {
                     "Ej: el acero tiene un alto módulo de Young.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 3){
+                    img.setIcon(new ImageIcon(getClass().getResource("/imgFis/densi.png")));
                     txtNomTem.setText("Densidad"); // Editar nombre de tema
                     txtTexto.setText("La densidad relaciona la masa y el volumen de un cuerpo.\n" +
                     "Se expresa como ρ = m/V, unidad: kg/m³ o g/cm³.\n" +
@@ -111,6 +141,7 @@ public class teoria extends javax.swing.JFrame {
                     "Es útil para identificar sustancias.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 4){
+                    img.setIcon(new ImageIcon(getClass().getResource("/imgFis/preHidro.png")));
                     txtNomTem.setText("Presión Hidrostática"); // Editar nombre de tema
                     txtTexto.setText("La presión hidrostática es causada por el peso\n" +
                     "del líquido sobre un punto sumergido.\n" +
@@ -141,20 +172,24 @@ public class teoria extends javax.swing.JFrame {
                     "Empuje: E = ρ·g·V desplazado");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 7){
+                    img.setIcon(new ImageIcon(getClass().getResource("/imgFis/visco.png")));
                     txtNomTem.setText("Viscosidad"); // Editar nombre de tema
-                    txtTexto.setText("La viscosidad es la resistencia que presentan los fluidos (líquidos o gases) al\n" +
-                    "movimiento o al flujo. Esta resistencia se debe a la fricción interna entre las\n" +
-                    "moléculas del fluido. Cuanto mayor es la viscosidad, más difícilmente fluye el fluido\n" +
-                    "y más lentamente se mueve. Por ejemplo, la miel tiene una viscosidad alta y fluye\n" +
-                    "con lentitud, mientras que el agua tiene una viscosidad baja y fluye con facilidad.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtTexto.setText("La viscosidad es la resistencia que presentan los fluidos (líquidos o\n" + 
+                    "gases) al movimiento o al flujo. Esta resistencia se debe a la fricción interna\n" + 
+                    "entre las moléculas del fluido. Cuanto mayor es la viscosidad, más \n" + 
+                    "difícilmente fluye el fluido y más lentamente se mueve. Por ejemplo, la miel\n" +
+                    "tiene una viscosidad alta y fluye con lentitud, mientras que el agua tiene \n" +
+                    "una viscosidad baja y fluye con facilidad.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 8){
+                    img.setIcon(new ImageIcon(getClass().getResource("/imgFis/prensaHidra.png")));
                     txtNomTem.setText("Prensa hidràulica"); // Editar nombre de tema
-                    txtTexto.setText("La prensa hidráulica funciona según el principio de Pascal, el cual establece que la\n" +
-                    "presión aplicada en un punto de un fluido incompresible se transmite de forma\n" +
-                    "uniforme en todas las direcciones dentro del fluido. Gracias a esto, una pequeña\n" +
-                    "fuerza aplicada en un pistón pequeño puede generar una fuerza mucho mayor en\n" +
-                    "otro pistón más grande, multiplicando el efecto\n\n"
+                    txtTexto.setText("La prensa hidráulica funciona según el principio de Pascal, el cual\n" +
+                    "establece que la presión aplicada en un punto de un fluido incompresible\n" +
+                    "se transmite de forma uniforme en todas las direcciones dentro del fluido.\n" + 
+                    "Gracias a esto, una pequeña fuerza aplicada en un pistón pequeño puede \n" + 
+                    "generar una fuerza mucho mayor en otro pistón más grande, multiplicando\n" 
+                            + "el efecto\n\n"
                             + "Fórmula: F1 / A1 = F2 / A2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                 }
             }else if (Parcial.parcial ==2){
@@ -195,7 +230,7 @@ public class teoria extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(210, 121, 0));
             txtNomTem.setBackground(new Color(210, 121, 0));
             
-            txtNomMat.setText("Calculos financieros");
+            txtNomMat.setText("Càlculos financieros");
             imgCalFin.setVisible(true);
             
             if (Parcial.parcial == 1){
@@ -240,7 +275,7 @@ public class teoria extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(22, 86, 35));
             txtNomTem.setBackground(new Color(22, 86, 35));
             
-            txtNomMat.setText("Quimica");
+            txtNomMat.setText("Quìmica");
             imgQuim.setVisible(true);
             
             if (Parcial.parcial == 1){
@@ -287,7 +322,7 @@ public class teoria extends javax.swing.JFrame {
             txtNomTem.setBackground(new Color(85, 36, 160));
             
             txtNomMat.setText("Contabilidad");
-            //imgConta.setVisible(true);
+            imgConta.setVisible(true);
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
@@ -342,6 +377,7 @@ public class teoria extends javax.swing.JFrame {
         imgFis = new javax.swing.JLabel();
         imgQuim = new javax.swing.JLabel();
         imgCalFin = new javax.swing.JLabel();
+        imgConta = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         btnVolver = new javax.swing.JLabel();
@@ -442,6 +478,9 @@ public class teoria extends javax.swing.JFrame {
         imgCalFin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconCalFin.png"))); // NOI18N
         jPanel2.add(imgCalFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
 
+        imgConta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconConta.png"))); // NOI18N
+        jPanel2.add(imgConta, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
+
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 130));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
@@ -477,7 +516,7 @@ public class teoria extends javax.swing.JFrame {
         txtTexto.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txtTexto.setRows(5);
         txtTexto.setBorder(null);
-        jPanel3.add(txtTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 49, 605, 254));
+        jPanel3.add(txtTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 49, 610, 250));
 
         jPanel5.setBackground(new java.awt.Color(153, 153, 153));
 
@@ -641,6 +680,7 @@ public class teoria extends javax.swing.JFrame {
     private javax.swing.JLabel img;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
+    private javax.swing.JLabel imgConta;
     private javax.swing.JLabel imgFis;
     private javax.swing.JLabel imgQuim;
     private javax.swing.JLabel jLabel2;

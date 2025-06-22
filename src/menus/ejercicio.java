@@ -8,6 +8,21 @@ import javax.swing.JOptionPane;
 
 public class ejercicio extends javax.swing.JFrame {
     
+    public void ejer1 (){
+        teoria.avance++;
+        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+        new ejercicio().setVisible(true);
+        dispose();
+    }
+    
+    public void ejer2 (){
+        teoria.avance = 0;
+        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
+        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
+        new temas1().setVisible(true);
+        dispose();
+    }
+
     int xMouse, yMouse;
     String[] opciones = {"Aceptar"};
     String mensaje = "Seguro que quieres abandonar la leccion";
@@ -97,89 +112,87 @@ public class ejercicio extends javax.swing.JFrame {
                     
                     if(teoria.avance == 3){   // Detector ejercicio
                         txtRespuesta.setText("Respuesta a ejercicio");  
-                        txtTexto.setText("Determina si la siguiente relación es una función:\n\n" +
-                        "(3,9),(6,12),(3,−1)");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("¿Es {(1,2),(1,3)} una función?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
                         txtRespuesta.setText("Respuesta a ejercicio");  
-                        txtTexto.setText("Clasifica el tipo de función:\n\n" +
-                        "f(x) = |x − 2|");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Clasifica f(x) = |x| según su tipo.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtNomTem.setText("Representación gráfica de funciones"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Grafica f(x) = -x + 2.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Aplica el criterio de la recta vertical. ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 3){
-                    txtNomTem.setText("Tema 3"); // Editar nombre de tema
+                    txtNomTem.setText("Evaluación y operaciones con funciones "); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Si f(x) = 2x + 1, encuentra f(4).");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Si f(x) = x², g(x) = x, calcula (f · g)(x).");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 4){
-                    txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    txtNomTem.setText(" Noción de límite y sus teoremas"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Calcula lim(x→1)(3x + 2). ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Resuelve lim(x→2)(x)(x + 1). ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 5){
-                    txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    txtNomTem.setText("Tipos de límites y formas indeterminadas"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Calcula lim(x→3)(x²−9)/(x−3). ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Identifica la forma indeterminada de lim(x→1)(x²−1)/(x−1). ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 6){
-                    txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    txtNomTem.setText("Aplicación de los teoremas de límites "); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Calcula lim(x→1)(x² + x). ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Resuelve lim(x→2)(x²−4)/(x−2). ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 7){
-                    txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    txtNomTem.setText(" Continuidad y discontinuidad de una función "); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Clasifica f(x) = |x| como continua o discontinua. ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("¿f(x) = 1/(x−3) es continua? ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 8){
                     txtNomTem.setText("Tema 8"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Intervalo de continuidad de f(x) = √(x + 5). ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Dominio de f(x) = 1/(x²−1). ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }
@@ -303,7 +316,7 @@ public class ejercicio extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(210, 121, 0));
             txtNomTem.setBackground(new Color(210, 121, 0));
             
-            txtNomMat.setText("Calculos financieros");
+            txtNomMat.setText("Càlculos financieros");
             imgCalFin.setVisible(true);
             
             if (Parcial.parcial == 1){
@@ -403,7 +416,7 @@ public class ejercicio extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(22, 86, 35));
             txtNomTem.setBackground(new Color(22, 86, 35));
             
-            txtNomMat.setText("Contabilidad");
+            txtNomMat.setText("Quìmica");
             imgQuim.setVisible(true);
             
             if (Parcial.parcial == 1){
@@ -505,7 +518,7 @@ public class ejercicio extends javax.swing.JFrame {
             txtNomTem.setBackground(new Color(85, 36, 160));
             
             txtNomMat.setText("Contabilidad");
-            imgQuim.setVisible(true);
+            imgConta.setVisible(true);
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){   // Detector tema
@@ -615,6 +628,7 @@ public class ejercicio extends javax.swing.JFrame {
         imgFis = new javax.swing.JLabel();
         imgQuim = new javax.swing.JLabel();
         imgCalFin = new javax.swing.JLabel();
+        imgConta = new javax.swing.JLabel();
         txtNomMat = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -704,6 +718,9 @@ public class ejercicio extends javax.swing.JFrame {
 
         imgCalFin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconCalFin.png"))); // NOI18N
         jPanel2.add(imgCalFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
+
+        imgConta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconConta.png"))); // NOI18N
+        jPanel2.add(imgConta, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
 
         txtNomMat.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
         txtNomMat.setForeground(new java.awt.Color(255, 255, 255));
@@ -913,105 +930,123 @@ public class ejercicio extends javax.swing.JFrame {
             if (temas1.tema == 1) {
                 if (teoria.avance == 3) {
                     if (esNumero && respuestaNumero == 1234512345) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
-                    } else if (respuestaTexto.equalsIgnoreCase("No") || respuestaTexto.equals("No se pongan lo que quieran")) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
+                    } else if (respuestaTexto.equalsIgnoreCase("No")) {
+                        ejer1();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 } else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 1234512345) {
                         tem1Fin1 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else if (respuestaTexto.equalsIgnoreCase("valor absoluto") || respuestaTexto.equals("segunda respuesta")) {
                         tem1Fin1 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
-                    } else {
-                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
-                    }
-                }
-           }
-        } 
-    }else if (materias.materias == 2){
-        if (Parcial.parcial == 1) {
-            if (temas1.tema == 1) {
-                if (teoria.avance == 3) {
-                    if (esNumero && respuestaNumero == 23102008) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
-                    } else if (respuestaTexto.equalsIgnoreCase("5N")) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
-                    } else {
-                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
-                    }
-                } else if (teoria.avance == 4) {
-                    if (esNumero && respuestaNumero == 23102008) {
-                        tem2p1Fin1 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
-                    } else if (respuestaTexto.equalsIgnoreCase("0.04m") || respuestaTexto.equals("40mm")) {
-                        tem2p1Fin1 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 }
            }else if (temas1.tema == 2){
                if (teoria.avance == 3) {
-                    if (esNumero && respuestaNumero == 23082008) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                    if (esNumero && respuestaNumero == 1234512345) {
+                        ejer1();
+                    } else if (respuestaTexto.equalsIgnoreCase("recta con pendiente")) {
+                        ejer1();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 1234512345) {
+                        tem1Fin1 = 1;
+                        ejer2();
+                    } else if (respuestaTexto.equalsIgnoreCase("Si corta 2 veces no es funcion")) {
+                        tem1Fin1 = 1;
+                        ejer2();
+                    } else {    
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+            }else if (temas1.tema == 3){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 9) {
+                        ejer1();
+                    } else if (respuestaTexto.equalsIgnoreCase("res txt")) {
+                        
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 1234512345) {
+                        tem1Fin1 = 1;
+                        ejer2();
+                    } else if (respuestaTexto.equalsIgnoreCase("x³")|| respuestaTexto.equals("x^3")) {
+                        tem1Fin1 = 1;
+                        ejer2();
+                    } else {    
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+            }else if (temas1.tema == 4){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 9) {
+                        ejer1();
+                    } else if (respuestaTexto.equalsIgnoreCase("res txt")) {
+                        
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 1234512345) {
+                        tem1Fin1 = 1;
+                        ejer2();
+                    } else if (respuestaTexto.equalsIgnoreCase("x³")|| respuestaTexto.equals("x^3")) {
+                        tem1Fin1 = 1;
+                        ejer2();
+                    } else {    
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+            }
+        } 
+    }else if (materias.materias == 2){           //Fisica
+        if (Parcial.parcial == 1) {              //Fisica parcial 1
+            if (temas1.tema == 1) {
+                if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        ejer1();
+                    } else if (respuestaTexto.equalsIgnoreCase("5N")) {
+                        ejer1();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin1 = 1;
+                        ejer2();
+                    } else if (respuestaTexto.equalsIgnoreCase("0.04m") || respuestaTexto.equals("40mm")) {
+                        tem2p1Fin1 = 1;
+                        ejer2();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+           }else if (temas1.tema == 2){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        ejer1();
                     } else if (respuestaTexto.equalsIgnoreCase("5×10⁷Pa")|| respuestaTexto.equals("5x10^7Pa")|| respuestaTexto.equals("50000000pa")) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 } else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 23102008) {
                         tem2p1Fin2 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else if (respuestaTexto.equalsIgnoreCase("1×10⁵N") || respuestaTexto.equals("1×10^5N")|| respuestaTexto.equals("100000N")) {
                         tem2p1Fin2 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
@@ -1019,33 +1054,19 @@ public class ejercicio extends javax.swing.JFrame {
            }else if (temas1.tema == 3){
                if (teoria.avance == 3) {
                     if (esNumero && respuestaNumero == 23082008) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else if (respuestaTexto.equalsIgnoreCase("5g/cm³")|| respuestaTexto.equals("5g/cm^3")) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 } else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 23102008) {
                         tem2p1Fin3 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else if (respuestaTexto.equalsIgnoreCase("200g")) {
                         tem2p1Fin2 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
@@ -1053,33 +1074,19 @@ public class ejercicio extends javax.swing.JFrame {
            }else if (temas1.tema == 4){
                if (teoria.avance == 3) {
                     if (esNumero && respuestaNumero == 23082008) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else if (respuestaTexto.equalsIgnoreCase("29430Pa")) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 } else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 23102008) {
                         tem2p1Fin4 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else if (respuestaTexto.equalsIgnoreCase("se duplica")|| respuestaTexto.equals("duplica")) {
                         tem2p1Fin4 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
@@ -1087,33 +1094,19 @@ public class ejercicio extends javax.swing.JFrame {
            }else if (temas1.tema == 5){
                if (teoria.avance == 3) {
                     if (esNumero && respuestaNumero == 23082008) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else if (respuestaTexto.equalsIgnoreCase("100N")) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 } else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 23102008) {
                         tem2p1Fin5 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else if (respuestaTexto.equalsIgnoreCase("se duplica")|| respuestaTexto.equals("duplica")) {
                         tem2p1Fin5 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
@@ -1121,33 +1114,19 @@ public class ejercicio extends javax.swing.JFrame {
            }else if (temas1.tema == 6){
                if (teoria.avance == 3) {
                     if (esNumero && respuestaNumero == 23082008) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else if (respuestaTexto.equalsIgnoreCase("49.05N")) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 } else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 23102008) {
                         tem2p1Fin6 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else if (respuestaTexto.equalsIgnoreCase("si")) {
                         tem2p1Fin6 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
@@ -1155,33 +1134,19 @@ public class ejercicio extends javax.swing.JFrame {
            }else if (temas1.tema == 7){
                if (teoria.avance == 3) {
                     if (esNumero && respuestaNumero == 23082008) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else if (respuestaTexto.equalsIgnoreCase("agua")|| respuestaTexto.equals("el agua")) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 } else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 23102008) {
                         tem2p1Fin7 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else if (respuestaTexto.equalsIgnoreCase("agua")|| respuestaTexto.equals("el agua")) {
                         tem2p1Fin7 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
@@ -1189,33 +1154,19 @@ public class ejercicio extends javax.swing.JFrame {
            }else if (temas1.tema == 8){
                if (teoria.avance == 3) {
                     if (esNumero && respuestaNumero == 23082008) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else if (respuestaTexto.equalsIgnoreCase("2000N")) {
-                        teoria.avance++;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        new ejercicio().setVisible(true);
-                        dispose();
+                        ejer1();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 } else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 23102008) {
                         tem2p1Fin8 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else if (respuestaTexto.equalsIgnoreCase("500N")) {
                         tem2p1Fin8 = 1;
-                        teoria.avance = 0;
-                        JOptionPane.showOptionDialog(null, correct, "Correcto", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/correct.png", 40, 40), opciones, opciones[0]);
-                        JOptionPane.showMessageDialog(null, "Felicidades, terminaste la lección", "Lección terminada", JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/final.png", 40, 40));
-                        new temas1().setVisible(true);
-                        dispose();
+                        ejer2();
                     } else {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
@@ -1316,6 +1267,7 @@ public class ejercicio extends javax.swing.JFrame {
     private javax.swing.JPanel cerrar;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
+    private javax.swing.JLabel imgConta;
     private javax.swing.JLabel imgFis;
     private javax.swing.JLabel imgQuim;
     private javax.swing.JLabel jLabel2;

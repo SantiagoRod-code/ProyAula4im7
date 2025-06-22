@@ -25,27 +25,27 @@ public class Parcial extends javax.swing.JFrame {
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage()); 
         txtNomMat.setEditable(false);
         
-        imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
+        imgConta.setVisible(false);imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
         
         if (materias.materias == 1){
             txtNomMat.setText("Cálculo diferencial");
             imgCalDif.setVisible(true);
             
         }else if (materias.materias == 2){
-            txtNomMat.setText("Fisica");
+            txtNomMat.setText("Fìsica");
             imgFis.setVisible(true);
             
         }else if (materias.materias == 3){
-            txtNomMat.setText("Quimica");
+            txtNomMat.setText("Quìmica");
             imgQuim.setVisible(true);
             
         }else if (materias.materias == 4){
-            txtNomMat.setText("Calculos financieros");
+            txtNomMat.setText("Càlculos financieros");
             imgCalFin.setVisible(true);
             
         }else if (materias.materias == 5){
             txtNomMat.setText("Contabilidad");
-            //imgConta.setVisible(true);
+            imgConta.setVisible(true);
         }
     }
     
@@ -65,6 +65,7 @@ public class Parcial extends javax.swing.JFrame {
         imgFis = new javax.swing.JLabel();
         imgQuim = new javax.swing.JLabel();
         imgCalFin = new javax.swing.JLabel();
+        imgConta = new javax.swing.JLabel();
         pnlVolver = new javax.swing.JPanel();
         btnVolver = new javax.swing.JLabel();
         pnlTem3 = new javax.swing.JPanel();
@@ -75,7 +76,6 @@ public class Parcial extends javax.swing.JFrame {
         btnPar1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
         setUndecorated(true);
         setResizable(false);
 
@@ -177,6 +177,10 @@ public class Parcial extends javax.swing.JFrame {
 
         imgCalFin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconCalFin.png"))); // NOI18N
         jPanel2.add(imgCalFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, -1, -1));
+
+        imgConta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconConta.png"))); // NOI18N
+        imgConta.setLabelFor(imgConta);
+        jPanel2.add(imgConta, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, -1, -1));
 
         pnlVolver.setBackground(new java.awt.Color(71, 1, 36));
 
@@ -427,6 +431,7 @@ public class Parcial extends javax.swing.JFrame {
     private javax.swing.JLabel btnVolver;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
+    private javax.swing.JLabel imgConta;
     private javax.swing.JLabel imgFis;
     private javax.swing.JLabel imgQuim;
     private javax.swing.JLabel jLabel1;

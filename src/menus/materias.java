@@ -43,7 +43,6 @@ public class materias extends javax.swing.JFrame {
         btnConta = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
         setUndecorated(true);
         setResizable(false);
 
@@ -87,7 +86,7 @@ public class materias extends javax.swing.JFrame {
         btnFis.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnFis.setForeground(new java.awt.Color(255, 255, 255));
         btnFis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnFis.setText("Fisica");
+        btnFis.setText("Fìsica");
         btnFis.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnFis.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -113,7 +112,7 @@ public class materias extends javax.swing.JFrame {
         btnQuim.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnQuim.setForeground(new java.awt.Color(255, 255, 255));
         btnQuim.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnQuim.setText("Quimica");
+        btnQuim.setText("Quìmica");
         btnQuim.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnQuim.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -139,7 +138,7 @@ public class materias extends javax.swing.JFrame {
         btnCalFin.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnCalFin.setForeground(new java.awt.Color(255, 255, 255));
         btnCalFin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnCalFin.setText("Calculos Financieros");
+        btnCalFin.setText("Càlculos Financieros");
         btnCalFin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCalFin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

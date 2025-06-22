@@ -19,7 +19,7 @@ public class ejemplo extends javax.swing.JFrame {
         txtNomTem.setEditable(false);
         txtNomMat.setEditable(false);
         
-        imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
+        imgConta.setVisible(false);imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
         
         if (materias.materias == 1){ // Detector materia
             barraTa.setBackground(new Color(144, 12, 63));
@@ -37,99 +37,104 @@ public class ejemplo extends javax.swing.JFrame {
                     txtNomTem.setText("Definición de una Función"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
-                        txtInstru.setText("Relación: {(1, 3), (2, 5), (3, 7)}");  
-                        txtTexto.setText("Esta relación está compuesta por tres pares ordenados: cada uno tiene una entrada (x) y una salida (y).\n" +
-                        "El número 1 se relaciona con el número 3.\n" +
-                        "El número 2 se relaciona con el número 5.\n" +
-                        "El número 3 se relaciona con el número 7.\n" +
-                        "Observamos que cada número de entrada es único, es decir, no se repite ningún valor de x.\n" +
-                        "Además, cada entrada tiene una sola salida, por lo tanto, cumple con la definición de función.\n\n"+
-                        "✅ Sí es una función, porque a cada valor de entrada (x) le corresponde exactamente un valor de salida (y)"); //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("f(x) = 2x + 3. Entonces f(1) = 5 y f(2) = 7 por sustitución directa.\n"
+                                + "Se multiplica x por 2 y se suma 3. Así se obtienen los valores de f(x)."); //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter
                     } else {
-                        txtInstru.setText("Relación: (4,2),(4,5),(5,6)");  
-                        txtTexto.setText("El número 4 se relaciona con el número 2.\n" +
-                        "El mismo número 4 también se relaciona con el número 5.\n" +
-                        "El número 5 se relaciona con el número 6.\n" +
-                        "Aquí podemos ver que el número 4 aparece dos veces como entrada, pero con dos salidas diferentes.\n" +
-                        "Esto viola la regla de las funciones, porque una función no permite que una misma entrada tenga \nmás de una salida.\n\n"+
-                        "❌ No es una función, porque la entrada 4 tiene dos resultados distintos, lo cual no está permitido en una función matemática.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("f(x) = x². f(−2) = 4 y f(3) = 9. Se elevan los valores al cuadrado.\n"
+                                + "Cada valor se sustituye en la función y se eleva al cuadrado.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editatr nombre de tema
+                    txtNomTem.setText("Representación gráfica de funciones"); // Editatr nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("f(x) = x². Su gráfica es una parábola con vértice en el origen.\n"
+                                + "La parábola surge al elevar x al cuadrado y es simétrica.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("f(x) = |x|. Tiene forma de \"V\", con vértice en (0,0).\n"
+                                + "Los negativos se vuelven positivos y los positivos permanecen.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 3){
-                    txtNomTem.setText("Tema 3"); // Editar nombre de tema
+                    txtNomTem.setText("Evaluación y operaciones con funciones"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("f(x) = x + 2, g(x) = 3x → (f + g)(x) = 4x + 2.\n\n"
+                                + "Se suman directamente los términos semejantes de ambas funciones.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("f(x) = x², g(x) = 2x → (f + g)(x) = x² + 2x.\n\n"
+                                + "Los términos no semejantes se suman como están.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 4){
-                    txtNomTem.setText("Tema 4"); // Editar nombre de tema
+                    txtNomTem.setText("Noción de límite y sus teoremas"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("lim(x→2) x² = 4. Se sustituye directamente en la función.\n\n"
+                                + "x² es continua, se evalúa directamente en x = 2: 2² = 4.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("lim(x→3)(2x + 1) = 7.\n\n"
+                                + "Función polinómica continua: se sustituye x por 3.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 5){
-                    txtNomTem.setText("Tema 5"); // Editar nombre de tema
+                    txtNomTem.setText("Tipos de límites y formas indeterminadas"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("lim(x→0) 1/x. El límite tiende a ∞ o −∞, no existe como número finito.\n\n"
+                                + "Depende del lado por el que te acerques; es un límite infinito.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("lim(x→2)(x²−4)/(x−2) = x + 2 → 4\n\n"
+                                + "Se factoriza: (x−2)(x+2)/(x−2), se simplifica y evalúa.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 6){
-                    txtNomTem.setText("Tema 6"); // Editar nombre de tema
+                    txtNomTem.setText("Aplicación de los teoremas de límites"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("lim(x→−1)(x³ + x² + x + 1) = 0.\n\n"
+                                + "Es polinomio continuo, se evalúa directamente: −1 + 1 −1 + 1 = 0.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("lim(x→2)(x²−4)/(x−2). Factoriza y luego evalúa.\n\n"
+                                + "x²−4 = (x−2)(x+2), se simplifica y se evalúa x + 2 = 4.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 7){
-                    txtNomTem.setText("Tema 7"); // Editar nombre de tema
+                    txtNomTem.setText("Continuidad y discontinuidad de una función"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("f(x) = x² → continua en todos los reales.\n\n"
+                                + "Es polinómica, cumple todas las condiciones de continuidad.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("f(x) = 1/(x−2) → discontinua en x = 2.\n\n"
+                                + "El denominador se hace 0, hay asíntota vertical.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 8){
-                    txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    txtNomTem.setText("Intervalos de continuidad o discontinuidad"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("f(x) = (x + 2)/(x − 3) → continua en (−∞, 3) - (3, ∞)\n\n"
+                                + "No está definida en x = 3 porque el denominador se hace 0.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("f(x) = √(x−1) → continua en [1, ∞)\n\n"
+                                + "La raíz solo existe si x−1 ≥ 0, es decir x ≥ 1.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }
@@ -142,7 +147,7 @@ public class ejemplo extends javax.swing.JFrame {
             txtNomTem.setBackground(new Color(85, 36, 160));
             
             txtNomMat.setText("Contabilidad");
-            imgFis.setVisible(true);
+            imgConta.setVisible(true);
             
             if (Parcial.parcial == 1){
                     
@@ -595,6 +600,7 @@ public class ejemplo extends javax.swing.JFrame {
         imgFis = new javax.swing.JLabel();
         imgQuim = new javax.swing.JLabel();
         imgCalFin = new javax.swing.JLabel();
+        imgConta = new javax.swing.JLabel();
         txtNomMat = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -683,6 +689,9 @@ public class ejemplo extends javax.swing.JFrame {
 
         imgCalFin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconCalFin.png"))); // NOI18N
         jPanel2.add(imgCalFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
+
+        imgConta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconConta.png"))); // NOI18N
+        jPanel2.add(imgConta, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
 
         txtNomMat.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
         txtNomMat.setForeground(new java.awt.Color(255, 255, 255));
@@ -943,6 +952,7 @@ public class ejemplo extends javax.swing.JFrame {
     private javax.swing.JPanel cerrar;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
+    private javax.swing.JLabel imgConta;
     private javax.swing.JLabel imgFis;
     private javax.swing.JLabel imgQuim;
     private javax.swing.JLabel jLabel2;

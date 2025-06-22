@@ -224,7 +224,7 @@ public class temas1 extends javax.swing.JFrame {
         txtNomPar.setEditable(false);
         txtNomMat.setEditable(false);
         
-        imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
+        imgConta.setVisible(false);imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
         
         if (materias.materias == 1){
             barraTa.setBackground(new Color(144, 12, 63));
@@ -247,7 +247,7 @@ public class temas1 extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(4, 27, 135));
             txtNomPar.setBackground(new Color(4, 27, 135));
             
-            txtNomMat.setText("Fisica");
+            txtNomMat.setText("Fìsica");
             imgFis.setVisible(true);
             
             if (Parcial.parcial==1){
@@ -265,7 +265,7 @@ public class temas1 extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(22, 86, 35));
             txtNomPar.setBackground(new Color(22, 86, 35));
             
-            txtNomMat.setText("Quimica");
+            txtNomMat.setText("Quìmica");
             imgQuim.setVisible(true);
             
             if (Parcial.parcial==1){
@@ -279,7 +279,7 @@ public class temas1 extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(210, 121, 0));
             txtNomPar.setBackground(new Color(210, 121, 0));
             
-            txtNomMat.setText("Calculos financieros");
+            txtNomMat.setText("Càlculos financieros");
             imgCalFin.setVisible(true);
             
             if (Parcial.parcial==1){
@@ -317,6 +317,7 @@ public class temas1 extends javax.swing.JFrame {
         imgFis = new javax.swing.JLabel();
         imgQuim = new javax.swing.JLabel();
         imgCalFin = new javax.swing.JLabel();
+        imgConta = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         btnVolver = new javax.swing.JLabel();
@@ -427,6 +428,9 @@ public class temas1 extends javax.swing.JFrame {
 
         imgCalFin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconCalFin.png"))); // NOI18N
         jPanel2.add(imgCalFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
+
+        imgConta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconConta.png"))); // NOI18N
+        jPanel2.add(imgConta, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 130));
 
@@ -800,6 +804,7 @@ public class temas1 extends javax.swing.JFrame {
     private javax.swing.JPanel cerrar;
     private javax.swing.JLabel imgCalDif;
     private javax.swing.JLabel imgCalFin;
+    private javax.swing.JLabel imgConta;
     private javax.swing.JLabel imgFis;
     private javax.swing.JLabel imgQuim;
     private javax.swing.JLabel jLabel1;
