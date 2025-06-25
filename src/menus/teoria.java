@@ -204,7 +204,7 @@ public class teoria extends javax.swing.JFrame {
                     "PV = nRT");
                 }
                 else if (temas1.tema == 2){
-                    txtNomTem.setText("Estado gaseoso");
+                    txtNomTem.setText("Temperatura y escalas");
                     txtTexto.setText("La temperatura indica cuánta energía cinética tienen las partículas.\n" +
                     "A mayor movimiento molecular, mayor será la temperatura registrada.\n" +
                     "Se mide con termómetro en °C, °F y K, según la escala usada.\n" +
@@ -214,9 +214,7 @@ public class teoria extends javax.swing.JFrame {
                     "k° → C° = k-273                        \"C° → F° = 1.8 c +32\n" +
                     "F° → K° = (5/9) (f-32) + 273.15     \"F° → C° = F-32/1.8\"" );
                 }
-                else if (temas1.tema == 3){
-                    
-                }
+                else if (temas1.tema == 3){}
                 else if (temas1.tema == 4){}
                 else if (temas1.tema == 5){}
                 else if (temas1.tema == 6){}
@@ -235,16 +233,38 @@ public class teoria extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("interés compuesto"); // Editar nombre de tema
+                    txtTexto.setText("El interés compuesto es un principio fundamental en finanzas que\n" +
+"describe cómo una inversión o deuda crece cuando los intereses\n" +
+"ganados se reinvierten y comienzan a generar nuevos intereses. A\n" +
+"diferencia del interés simple —donde solo se calcula sobre el capital\n" +
+"inicial—, el interés compuesto se calcula sobre el capital inicial más\n" +
+"los intereses acumulados previamente.\n"
+                            + "I = C [ ( 1 + t ]^n – 1] \n"
+                            + "C = capital\n" +
+"T = tasa\n" +
+"N = tiempo");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText( "Monto de una anualidad"); // Editar nombre de tema
+                    txtTexto.setText("El monto de una anualidad es el valor acumulado al final del período,\n" +
+"considerando todos los pagos realizados más los intereses generados durante ese\n" +
+"tiempo. \n\n"
+                            + "S = P [ ( 1+t)^n-1] / t \n"
+                            + "P = pago o deposito periódico\n" +
+"T = tasa\n" +
+"N = tiempo ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 3){
-                    txtNomTem.setText("Tema 3"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("valor actual"); // Editar nombre de tema
+                    txtTexto.setText("El valor actual (o valor presente) es el valor hoy de una cantidad de dinero que se\n" +
+"recibirá o pagará en el futuro, ajustado por una tasa de interés. Es decir, cuánto\n" +
+"necesitarías tener hoy para alcanzar una cantidad futura, considerando que el\n" +
+"dinero genera rendimiento con el tiempo. \n\n"
+                            + "A = P [1 – (1 + t)^-n] / t\n" +
+"P = pagos o depósitos periódicos\n" +
+"T = tasa\n" +
+"N = tiempo ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
@@ -280,12 +300,27 @@ public class teoria extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
-                    
+                    txtNomTem.setText("Balanceo de ecuaciones químicas"); // Editar nombre de tema
+                    txtTexto.setText(" El balanceo de ecuaciones químicas es fundamental para cumplir "
+                            + "\ncon la Ley de Conservación de la Materia, la cual establece que la"
+                            + "\nmasa no se crea ni se destruye en una reacción química. Por lo "
+                            + "\ntanto, el número de átomos de cada elemento debe ser igual en "
+                            + "\nlos reactivos y en los productos. Para lograr esto, se utilizan "
+                            + "\ncoeficientes estequiométricos delante de las fórmulas químicas."
+                            + "\nEn este ejercicio, debes identificar qué números permiten balancear"
+                            + "\ncorrectamente la ecuación dada. ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    img.setIcon(new ImageIcon(getClass().getResource("/imgQ/tem1.png"))); 
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("Balanceo con múltiples compuestos "); // Editar nombre de tema
+                    txtTexto.setText("Cuando una ecuación química incluye más de dos "
+                            + "\ncompuestos, el balanceó puede volverse más complejo. Es "
+                            + "\nimportante revisar cada elemento presente y asegurarse "
+                            + "\nde que el número total de átomos por lado de la ecuación sea "
+                            + "\nigual. Este tipo de ejercicio desarrolla la habilidad de observar "
+                            + "\nlas relaciones cuantitativas entre los compuestos involucrados "
+                            + "\nen una reacción química. ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    img.setIcon(new ImageIcon(getClass().getResource("/imgQ/tem3.png"))); 
+
                     
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
@@ -326,16 +361,28 @@ public class teoria extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("PEPS"); // Editar nombre de tema
+                    txtTexto.setText("PEPS usa los productos más antiguos como los primeros en salir.\n" +
+"Es útil cuando los precios suben constantemente con el tiempo.\n" +
+"El costo de ventas se calcula con las primeras compras registradas.\n" +
+"El inventario final queda con los productos más recientes.\n" +
+"Este método es aceptado por normas contables internacionales.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("LIFO"); // Editar nombre de tema
+                    txtTexto.setText("LIFO usa los productos más recientes como los primeros en salir.\n" +
+"El costo de ventas se basa en las últimas compras realizadas.\n" +
+"Es útil en entornos de inflación alta para reducir utilidad fiscal.\n" +
+"No está permitido en algunos países por normas fiscales.\n" +
+"El inventario final queda con productos más antiguos.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 3){
-                    txtNomTem.setText("Tema 3"); // Editar nombre de tema
-                    txtTexto.setText("informacion de tema 3");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    txtNomTem.setText("TCosto Promedio"); // Editar nombre de tema
+                    txtTexto.setText("Se calcula un costo promedio ponderado de todos los productos.\n" +
+"El costo de ventas y el inventario se basan en ese promedio.\n" +
+"Es útil cuando no hay gran variación entre precios de compras.\n" +
+"Es fácil de aplicar y entender contablemente.\n" +
+"Minimiza el impacto de precios muy altos o bajos.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
@@ -387,7 +434,6 @@ public class teoria extends javax.swing.JFrame {
         img = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
         setUndecorated(true);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -464,7 +510,7 @@ public class teoria extends javax.swing.JFrame {
                 txtNomTemActionPerformed(evt);
             }
         });
-        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 550, 40));
+        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 630, 40));
 
         imgCalDif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/CalDif.png"))); // NOI18N
         jPanel2.add(imgCalDif, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));

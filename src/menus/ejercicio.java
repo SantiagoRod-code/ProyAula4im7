@@ -85,6 +85,15 @@ public class ejercicio extends javax.swing.JFrame {
     public static int tem4Fin7;
     public static int tem4Fin8;
     
+    public static int tem5Fin1;
+    public static int tem5Fin2;
+    public static int tem5Fin3;
+    public static int tem5Fin4;
+    public static int tem5Fin5;
+    public static int tem5Fin6;
+    public static int tem5Fin7;
+    public static int tem5Fin8;
+    
     public ejercicio() {
         initComponents();
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage()); 
@@ -93,7 +102,7 @@ public class ejercicio extends javax.swing.JFrame {
         txtNomTem.setEditable(false);
         txtNomMat.setEditable(false);
         
-        imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
+        imgConta.setVisible(false);imgCalDif.setVisible(false); imgFis.setVisible(false); imgQuim.setVisible(false); imgCalFin.setVisible(false);
         
         if (materias.materias == 1){ // Detector materia
             barraTa.setBackground(new Color(144, 12, 63));
@@ -294,7 +303,7 @@ public class ejercicio extends javax.swing.JFrame {
                     }
                     
                 }else if (temas1.tema == 8){
-                    txtNomTem.setText("Tema 8"); // Editar nombre de tema
+                    txtNomTem.setText("Prensa Hidráulica"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
                         txtRespuesta.setText("Respuesta a ejercicio 1");  
@@ -306,9 +315,32 @@ public class ejercicio extends javax.swing.JFrame {
                         txtTexto.setText("Se necesita levantar una carga de 5000 N y el área del pistón mayor es\n" +
                         "de 250 cm². ¿Qué fuerza se debe aplicar en un pistón de 25 cm²?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
-                    
                 }
-        }
+            }else if (Parcial.parcial == 2){
+                if (temas1.tema == 1){
+                    txtNomTem.setText("Estado gaseoso"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText(" Un gas ocupa 2 L a una presión de 1 atm. Si se comprime hasta 1 L sin\n" +
+"cambiar la temperatura, ¿cuál será la nueva presión?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Un gas ocupa 3 L a 300 K. ¿Qué volumen ocupará a 400 K, si la presión\n" +
+"es constante?");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                }else if (temas1.tema ==2){
+                    txtNomTem.setText("Temperatura y escalas"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 3){   // Detector ejercicio
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Convierte 300 K a grados Celsius.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else if (teoria.avance == 4){  
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Convierte 20 °C a Kelvin.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                }
+            }
         }else if (materias.materias == 4){
             barraTa.setBackground(new Color(210, 121, 0));
             cerrar.setBackground(new Color(210, 121, 0));
@@ -321,36 +353,41 @@ public class ejercicio extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtNomTem.setText("Interés compuesto"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                                txtTexto.setText("Calcula el interés compuesto para una inversión\nde $10,000 al 2% mensual\ndurante 6 meses.\n\nI = C[(1+t)^n – 1] = ?");
+
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2 ");  
+                                txtTexto.setText("Inviertes $15,000 a una tasa de 1.5% mensual\npor 8 meses.\nCalcula el interés compuesto.\n\nI = C[(1+t)^n – 1] = ?");
                     }
                     
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1 ");  
+                                txtTexto.setText("Calcula el valor actual de pagos quincenales\nde $900 durante 24 quincenas\na una tasa del 1.3% quincenal.\n\nA = P[1 – (1+t)^-n]/t = ?");
+
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2 "); 
+                                txtTexto.setText("¿Cuánto deberías tener hoy para obtener $50,000\nen 18 quincenas si se aplica\nuna tasa de 1.1% por quincena?\n\nA = P[1 – (1+t)^-n]/t = ?");
+
                     }
                     
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1 ");  
+                                txtTexto.setText("Calcula el monto acumulado con depósitos\nde $4,000 cada trimestre\npor 16 periodos a una tasa de 2% trimestral.\n\nS = P[(1+t)^n – 1]/t = ?");
+
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2 ");
+                                txtTexto.setText("¿Cuál es el monto final si depositas $2,000 bimestrales\ndurante 30 bimestres a una tasa del 2.2% bimestral?\n\nS = P[(1+t)^n – 1]/t = ?");
+
                     }
                     
                 }else if (temas1.tema == 4){
@@ -421,25 +458,25 @@ public class ejercicio extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtNomTem.setText("Balanceo de ecuaciones químicas"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("(Ecuación no balanceada) H₂ + O₂ → H₂O ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("(Ecuación no balanceada)  Al + O₂ → Al₂O₃ ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtNomTem.setText("Balanceo con múltiples compuestos"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("(Ecuación no balanceada) C₂H₆ + O₂ → CO₂ + H₂O ");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("(Ecuación no balanceada) CH₃OH + O₂ → CO₂ + H₂O");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 3){
@@ -522,46 +559,62 @@ public class ejercicio extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtNomTem.setText("PEPS"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Compra: 8 a $20 y 6 a $25. Se venden 10.\n" +
+"a) Costo total usando PEPS\n" +
+"b) Inventario final (unidades y valor)");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Compra: 12 a $14 y 10 a $16. Se venden 15.\n" +
+"Calcula:\n" +
+"a) Costo de venta con PEPS\n" +
+"b) Inventario final");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 2){
                     txtNomTem.setText("Tema 2"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("iCompra: 8 a $20 y 6 a $25. Se venden 10.\n" +
+"a) Costo total usando LIFO\n" +
+"b) Inventario final");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Compra: 12 a $14 y 10 a $16. Se venden 15.\n" +
+"Calcula:\n" +
+"a) Costo de venta con LIFO\n" +
+"b) Inventario final");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
-                        txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
+                        txtTexto.setText("Compra: 8 a $20 y 6 a $25. Se venden 10.\n"
+                                + "a) Calcula el costo promedio\n" +
+"b) Determina costo de venta e inventario");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
-                        txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
+                        txtTexto.setText("Compra: 12 a $14 y 10 a $16. Se venden 15.\n" +
+"Calcula:\n" +
+"a) Costo promedio\n" +
+"b) Costo de venta\n" +
+"c) Inventario final");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 4){
                     txtNomTem.setText("Tema 4"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
                         txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
                         txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
@@ -569,10 +622,10 @@ public class ejercicio extends javax.swing.JFrame {
                     txtNomTem.setText("Tema 5"); // Editar nombre de tema
                     
                     if(teoria.avance == 3){   // Detector ejercicio
-                        txtRespuesta.setText("Respuesta a ejercicio 1 (1)");  
+                        txtRespuesta.setText("Respuesta a ejercicio 1");  
                         txtTexto.setText("informacion del ejercicio 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else if (teoria.avance == 4){  
-                        txtRespuesta.setText("Respuesta a ejercicio 2 (2)");  
+                        txtRespuesta.setText("Respuesta a ejercicio 2");  
                         txtTexto.setText("informacion del ejercicio 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
@@ -640,7 +693,6 @@ public class ejercicio extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
         setUndecorated(true);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -705,7 +757,7 @@ public class ejercicio extends javax.swing.JFrame {
                 txtNomTemActionPerformed(evt);
             }
         });
-        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 400, 40));
+        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 630, 40));
 
         imgCalDif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/CalDif.png"))); // NOI18N
         jPanel2.add(imgCalDif, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
@@ -958,10 +1010,9 @@ public class ejercicio extends javax.swing.JFrame {
                     }
                 }else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 1234512345) {
-                        tem1Fin1 = 1;
-                        ejer2();
+                        
                     } else if (respuestaTexto.equalsIgnoreCase("Si corta 2 veces no es funcion")) {
-                        tem1Fin1 = 1;
+                        tem1Fin2 = 1;
                         ejer2();
                     } else {    
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
@@ -978,10 +1029,9 @@ public class ejercicio extends javax.swing.JFrame {
                     }
                 }else if (teoria.avance == 4) {
                     if (esNumero && respuestaNumero == 1234512345) {
-                        tem1Fin1 = 1;
-                        ejer2();
+                        
                     } else if (respuestaTexto.equalsIgnoreCase("x³")|| respuestaTexto.equals("x^3")) {
-                        tem1Fin1 = 1;
+                        tem1Fin3 = 1;
                         ejer2();
                     } else {    
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
@@ -989,7 +1039,7 @@ public class ejercicio extends javax.swing.JFrame {
                 }
             }else if (temas1.tema == 4){
                if (teoria.avance == 3) {
-                    if (esNumero && respuestaNumero == 9) {
+                    if (esNumero && respuestaNumero == 5) {
                         ejer1();
                     } else if (respuestaTexto.equalsIgnoreCase("res txt")) {
                         
@@ -997,11 +1047,86 @@ public class ejercicio extends javax.swing.JFrame {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 }else if (teoria.avance == 4) {
-                    if (esNumero && respuestaNumero == 1234512345) {
-                        tem1Fin1 = 1;
+                    if (esNumero && respuestaNumero == 6) {
+                        tem1Fin4 = 1;
                         ejer2();
                     } else if (respuestaTexto.equalsIgnoreCase("x³")|| respuestaTexto.equals("x^3")) {
-                        tem1Fin1 = 1;
+                        
+                    } else {    
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+            }else if (temas1.tema == 5){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 6) {
+                        ejer1();
+                    } else if (respuestaTexto.equalsIgnoreCase("res txt")) {
+                        
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 6) {
+                        
+                    } else if (respuestaTexto.equalsIgnoreCase("forma indeterminada")|| respuestaTexto.equals("indeterminda")) {
+                        tem1Fin5 = 1;
+                        ejer2();
+                    } else {    
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+            }else if (temas1.tema == 6){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 2) {
+                        ejer1();
+                    } else if (respuestaTexto.equalsIgnoreCase("res txt")) {
+                        
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 4) {
+                        tem1Fin6 = 1;
+                        ejer2();
+                    } else if (respuestaTexto.equalsIgnoreCase("forma indeterminada")|| respuestaTexto.equals("indeterminda")) {
+                        
+                    } else {    
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+            }else if (temas1.tema == 7){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 2) {
+                        
+                    } else if (respuestaTexto.equalsIgnoreCase("continua")) {
+                        ejer1();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 4) {
+                        
+                    } else if (respuestaTexto.equalsIgnoreCase("no")) {
+                        tem1Fin7 = 1;
+                        ejer2();
+                    } else {    
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+            }else if (temas1.tema == 8){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 2) {
+                        
+                    } else if (respuestaTexto.equalsIgnoreCase("[−5, ∞)")) {
+                        ejer1();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 4) {
+                        
+                    } else if (respuestaTexto.equalsIgnoreCase("(−∞,−1)(−1,1)(1,∞)")) {
+                        tem1Fin8 = 1;
                         ejer2();
                     } else {    
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
@@ -1171,11 +1296,221 @@ public class ejercicio extends javax.swing.JFrame {
                         JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
                     }
                 }
-           }
+            }
+        }else if (Parcial.parcial == 2){
+            if (temas1.tema == 1){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23082008) {
+                        ejer1();
+                    } else if (respuestaTexto.equalsIgnoreCase("2atm")) {
+                        ejer1();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin8 = 1;
+                        ejer2();
+                    } else if (respuestaTexto.equalsIgnoreCase("4L")) {
+                        tem2p1Fin8 = 1;
+                        ejer2();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+            }else if (temas1.tema == 2){
+               if (teoria.avance == 3) {
+                    if (esNumero && respuestaNumero == 23082008) {
+                        ejer1();
+                    } else if (respuestaTexto.equalsIgnoreCase("26.85 °C")) {
+                        ejer1();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                } else if (teoria.avance == 4) {
+                    if (esNumero && respuestaNumero == 23102008) {
+                        tem2p1Fin8 = 1;
+                        ejer2();
+                    } else if (respuestaTexto.equalsIgnoreCase("293.15 K")) {
+                        tem2p1Fin8 = 1;
+                        ejer2();
+                    } else {
+                        JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }
+            }
         }
-    }else if (materias.materias == 3){
     }else if (materias.materias == 4){
+        if (Parcial.parcial == 1) { // Finanzas parcial 1
+    if (temas1.tema == 1) { // Interés compuesto
+        if (teoria.avance == 3) {
+            if (esNumero && respuestaNumero == 1236.0) {
+                ejer1();
+            } else if (respuestaTexto.equalsIgnoreCase("$1236") || respuestaTexto.equals("1236")) {
+                ejer1();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        } else if (teoria.avance == 4) {
+            if (esNumero && respuestaNumero == 1870.64) {
+                tem4Fin1 = 1;
+                ejer2();
+            } else if (respuestaTexto.equalsIgnoreCase("$1870.64") || respuestaTexto.equals("1870.64")) {
+                tem4Fin1 = 1;
+                ejer2();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        }
+    } else if (temas1.tema == 2) { // Valor actual
+        if (teoria.avance == 3) {
+            if (esNumero && respuestaNumero == 17602.93) {
+                ejer1();
+            } else if (respuestaTexto.equalsIgnoreCase("$17602.93") || respuestaTexto.equals("17602.93")) {
+                ejer1();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        } else if (teoria.avance == 4) {
+            if (esNumero && respuestaNumero == 35376.02) {
+                tem4Fin2 = 1;
+                ejer2();
+            } else if (respuestaTexto.equalsIgnoreCase("$35376.02") || respuestaTexto.equals("35376.02")) {
+                tem4Fin2 = 1;
+                ejer2();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        }
+    } else if (temas1.tema == 3) { // Monto de anualidad
+        if (teoria.avance == 3) {
+            if (esNumero && respuestaNumero == 86965.36) {
+                ejer1();
+            } else if (respuestaTexto.equalsIgnoreCase("$86965.36") || respuestaTexto.equals("86965.36")) {
+                ejer1();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        } else if (teoria.avance == 4) {
+            if (esNumero && respuestaNumero == 95383.59) {
+                tem4Fin3 = 1;
+                ejer2();
+            } else if (respuestaTexto.equalsIgnoreCase("$95383.59") || respuestaTexto.equals("95383.59")) {
+                                tem4Fin3 = 1;
+ejer2();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        }
+    }
+}
+    }else if (materias.materias == 3){
+        if(Parcial.parcial==1){
+            if(temas1.tema==1){
+                if(teoria.avance==3){
+                    if (respuestaTexto.equalsIgnoreCase("2H2 + O2 -> 2H2O")) {
+                        tem3Fin1=1;
+                        ejer1();
+                    } else {
+                    JOptionPane.showOptionDialog(null, "La ecuación es incorrecta, intenta de nuevo", "Incorrecta", 
+                    JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, 
+                    getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }else if (teoria.avance==4){
+                     if (respuestaTexto.equalsIgnoreCase("4Al + 3O2 -> 2Al2O3")) {
+                ejer2();
+            } else {
+                JOptionPane.showOptionDialog(null, "La ecuación es incorrecta, intenta de nuevo", "Incorrecta", 
+                    JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, 
+                    getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+                }
+            }else if (temas1.tema==2){
+                if(teoria.avance==3){
+                    if (respuestaTexto.equalsIgnoreCase("2C2H6 + 7O2 -> 4CO2 + 6H2O")) {
+                        ejer1();
+                    } else {
+                    JOptionPane.showOptionDialog(null, "La ecuación es incorrecta, intenta de nuevo", "Incorrecta", 
+                    JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, 
+                    getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+                    }
+                }else if (teoria.avance==4){
+                     if (respuestaTexto.equalsIgnoreCase("2CH3OH + 3O2 -> 2CO2 + 4H2O")) {
+                         tem3Fin2=1;
+                ejer2();
+            } else {
+                JOptionPane.showOptionDialog(null, "La ecuación es incorrecta, intenta de nuevo", "Incorrecta", 
+                    JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, 
+                    getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+                }
+            }
+        }
     }else if (materias.materias == 5){
+        if (Parcial.parcial == 1) { // Finanzas parcial 1
+    if (temas1.tema == 1) { // PEPS
+        if (teoria.avance == 3) {
+            if (esNumero && respuestaNumero == 210.0) {
+                ejer1();
+            } else if (respuestaTexto.equalsIgnoreCase("$210") || respuestaTexto.equals("210")) {
+                ejer1();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        } else if (teoria.avance == 4) {
+            if (esNumero && respuestaNumero == 194.0) {
+                tem5Fin1 = 1;
+                ejer2();
+            } else if (respuestaTexto.equalsIgnoreCase("$194") || respuestaTexto.equals("194")) {
+                tem5Fin1 = 1;
+                ejer2();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        }
+    } else if (temas1.tema == 2) { // LIFO
+        if (teoria.avance == 3) {
+            if (esNumero && respuestaNumero == 215.0) {
+                ejer1();
+            } else if (respuestaTexto.equalsIgnoreCase("$215") || respuestaTexto.equals("215")) {
+                ejer1();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        } else if (teoria.avance == 4) {
+            if (esNumero && respuestaNumero == 198.0) {
+                tem5Fin2 = 1;
+                ejer2();
+            } else if (respuestaTexto.equalsIgnoreCase("$198") || respuestaTexto.equals("198")) {
+                tem5Fin2 = 1;
+                ejer2();
+            } else {
+                    JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        }
+    } else if (temas1.tema == 3) { // Costo Promedio
+        if (teoria.avance == 3) {
+            if (esNumero && respuestaNumero == 212.5) {
+                ejer1();
+            } else if (respuestaTexto.equalsIgnoreCase("$212.5") || respuestaTexto.equals("212.5")) {
+                ejer1();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        } else if (teoria.avance == 4) {
+            if (esNumero && respuestaNumero == 210.0) {
+                tem5Fin3 = 1;
+                ejer2();
+            } else if (respuestaTexto.equalsIgnoreCase("$210") || respuestaTexto.equals("210")) {
+                tem5Fin3 = 1;
+                ejer2();
+            } else {
+                JOptionPane.showOptionDialog(null, "La respuesta es incorrecta, vuelve a intentarlo", "Incorrecta", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, getIcon("/imagenes/error.png", 40, 40), opciones, opciones[0]);
+            }
+        }
+    }
+}
+
     }
 
     }//GEN-LAST:event_btnSiguienteMouseClicked

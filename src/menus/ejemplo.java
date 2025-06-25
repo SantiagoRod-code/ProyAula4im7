@@ -152,36 +152,48 @@ public class ejemplo extends javax.swing.JFrame {
             if (Parcial.parcial == 1){
                     
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Masa"); // Editar nombre de tema
+                    txtNomTem.setText("PEPS "); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("Una pelota de fútbol tiene una masa de 450 gramos. Aunque esté en la Tierra o en la Luna, su masa no cambia.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Compra: 5 a $10 y 5 a $15 → se venden 6 unidades.\n" +
+"Se usan primero los de $10 y luego los de $15.\n" +
+"Costo: 5×$10 + 1×$15 = $65. Inventario: 4 unidades.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Compra: 10 a $12 y 10 a $18 → se venden 12 unidades.\n" +
+"Se usan primero los de $12, luego los de $18.\n" +
+"Costo: 10×$12 + 2×$18 = $156. Inventario: 8 productos.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtNomTem.setText("LIFO"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Compra: 5 a $10 y 5 a $15 → se venden 6 unidades.\n" +
+"Se usan primero los de $15 y luego los de $10.\n" +
+"Costo: 5×$15 + 1×$10 = $85. Inventario: 4 unidades");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Compra: 10 a $12 y 10 a $18 → se venden 12 unidades.\n" +
+"Se usan primero los de $18, luego los de $12.\n" +
+"Costo: 10×$18 + 2×$12 = $216. Inventario: 8 productos.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 3){
-                    txtNomTem.setText("Tema 3"); // Editar nombre de tema
+                    txtNomTem.setText("Costo Promedio"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Compra: 5 a $10 y 5 a $15 = 10 productos.\n" +
+"Costo promedio = (5×10 + 5×15) ÷ 10 = $12.50\n" +
+"Se venden 6 → costo = 6×$12.50 = $75. Inventario: 4×$12.50");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Compra: 10 a $12 y 10 a $18 = 20 productos.\n" +
+"Costo promedio = (120+180)÷20 = $15\n" +
+"Se venden 12 → costo = 12×15 = $180. Inventario: 8×15 = $120");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 4){
@@ -253,36 +265,37 @@ public class ejemplo extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtNomTem.setText("Interes compuesto"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Inviertes $50,000 al 0.97% mensual por 3 meses.\n\nI = C[(1+t)^n – 1]\nI = 50,000[(1+0.0097)^3 – 1]\nI = 50,000[1.02938 – 1]\nI = 50,000[0.02938] = $1,469.16");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
-                        txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtInstru.setText("Ejemplo 2"); 
+                        txtTexto.setText("Depósitos de $3,000 cada 4 meses por 42 periodos\na 3.31% cuatrimestral.\n\nS = P[(1+t)^n – 1]/t\nS = 3,000[(1+0.0331)^42 – 1]/0.0331\nS = 3,000[2.92626]/0.0331 = $265,220.05");
                     }
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtNomTem.setText("Valor actual"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                                txtTexto.setText("Pagos de $1,340 por 36 quincenas a 1.2% quincenal.\n\nA = P[1 – (1+t)^-n]/t\nA = 1,340[1 – (1+0.012)^-36]/0.012\nA = 1,340[0.34911]/0.012 = $38,985");
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                                txtTexto.setText("Inversión de $20,000 al 1.1% mensual por 6 meses.\n\nI = C[(1+t)^n – 1]\nI = 20,000[(1+0.011)^6 – 1]\nI = 20,000[0.06826] = $1,365.38");
                     }
                     
                 }else if (temas1.tema == 3){
                     txtNomTem.setText("Tema 3"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
-                        txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtInstru.setText("Ejemplo 1"); 
+                                txtTexto.setText("Depósitos de $5,000 cada bimestre por 24 periodos\na una tasa del 2.1% bimestral.\n\nS = P[(1+t)^n – 1]/t\nS = 5,000[(1+0.021)^24 – 1]/0.021\nS = 5,000[0.61897]/0.021 = $147,373.81");
+
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                                txtTexto.setText("Aportaciones trimestrales de $2,500 durante 20 trimestres\na una tasa del 2.5% trimestral.\n\nS = P[(1+t)^n – 1]/t\nS = 2,500[(1+0.025)^20 – 1]/0.025\nS = 2,500[0.63862]/0.025 = $63,862");
                     }
                     
                 }else if (temas1.tema == 4){
@@ -354,25 +367,35 @@ public class ejemplo extends javax.swing.JFrame {
             
             if (Parcial.parcial == 1){
                 if (temas1.tema == 1){   // Detector tema
-                    txtNomTem.setText("Tema 1"); // Editar nombre de tema
+                    txtNomTem.setText("Balanceo de ecuaciones químicas"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
-                        txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtInstru.setText("Ejemplo 1");
+                        jLabel1.setIcon(new ImageIcon(getClass().getResource("/imgQ/tem2.png")));
+                        txtTexto.setText("");
+                        txtTexto.setVisible(false);//Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("Fe₂O₃ + CO → Fe + CO₂\n" +
+"El óxido de hierro reacciona con monóxido de carbono, produciendo hierro metálico y dióxido de carbono. \n" +
+"\n" +
+"El CO le quita oxígeno al óxido de hierro (Fe₂O₃) lo cual reduce el óxido a hierro metálico (Fe).\n" +
+"\n" +
+"Al mismo tiempo, el CO se oxida y se convierte en CO₂.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 2){
-                    txtNomTem.setText("Tema 2"); // Editar nombre de tema
+                    txtNomTem.setText("Balanceo con múltiples compuestos"); // Editar nombre de tema
                     
                     if(teoria.avance == 1){   // Detector ejemplo
                         txtInstru.setText("Ejemplo 1");  
-                        txtTexto.setText("informacion del ejemplo 1");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        jLabel1.setIcon(new ImageIcon(getClass().getResource("/imgQ/tem4.png")));
+                        txtTexto.setText("");
+                        txtTexto.setVisible(false);//Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     } else {
                         txtInstru.setText("Ejemplo 2");  
-                        txtTexto.setText("informacion del ejemplo 2");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                        txtTexto.setText("   C₃H₈ + O₂ → CO₂ + H₂O\n" +
+"Propano reacciona con oxígeno para formar dióxido de carbono y agua. Es una combustión completa, se debe balancear C, H y O.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
                     
                 }else if (temas1.tema == 3){
@@ -580,7 +603,33 @@ public class ejemplo extends javax.swing.JFrame {
                         "generando una fuerza mucho mayor. Así, se pueden moldear o cortar\n" +
                         "materiales sólidos con gran eficacia y precisión.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
                     }
+                }
+            }else if (Parcial.parcial == 2){
+                if (temas1.tema == 1){
+                    txtNomTem.setText("Estado Gaseoso"); // Editar nombre de tema
                     
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText(" El aire en un neumático se comprime al aumentar la presión.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("2. El gas\n" +
+"de una bombona se expande al liberarse, ocupando más espacio.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
+                } else if (temas1.tema == 2){
+                    txtNomTem.setText("Temperatura y escalas"); // Editar nombre de tema
+                    
+                    if(teoria.avance == 1){   // Detector ejemplo
+                        txtInstru.setText("Ejemplo 1");  
+                        txtTexto.setText("Convierte 25°c a F°\n" +
+"Usamos la fórmula F= 1.8 • C + 32\n" +
+"F = 1.8(25) + 32 = 45 + 32 = 77 °F\n" +
+"El resultado es una temperatura en Fahrenheit.");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    } else {
+                        txtInstru.setText("Ejemplo 2");  
+                        txtTexto.setText("Convierte 100 °F a C°\n" +
+"C = (5/9)(100 − 32) = (5/9)(68) = 37.8 °C");   //Cambiar la informacion que se va a mostrar (Usen esto "\n" para enter)
+                    }
                 }
             }
         }
@@ -609,9 +658,9 @@ public class ejemplo extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         btnSiguiente = new javax.swing.JLabel();
         txtInstru = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
         setUndecorated(true);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -676,7 +725,7 @@ public class ejemplo extends javax.swing.JFrame {
                 txtNomTemActionPerformed(evt);
             }
         });
-        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 500, 40));
+        jPanel2.add(txtNomTem, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 620, 40));
 
         imgCalDif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/CalDif.png"))); // NOI18N
         jPanel2.add(imgCalDif, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
@@ -708,6 +757,7 @@ public class ejemplo extends javax.swing.JFrame {
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 130));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel4.setBackground(new java.awt.Color(153, 153, 153));
 
@@ -732,11 +782,14 @@ public class ejemplo extends javax.swing.JFrame {
             .addComponent(btnVolver, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
         );
 
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 345, -1, -1));
+
         txtTexto.setEditable(false);
         txtTexto.setColumns(20);
         txtTexto.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtTexto.setRows(5);
         txtTexto.setBorder(null);
+        jPanel3.add(txtTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 118, 701, 185));
 
         jPanel5.setBackground(new java.awt.Color(153, 153, 153));
 
@@ -765,6 +818,8 @@ public class ejemplo extends javax.swing.JFrame {
                 .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(691, 345, -1, -1));
+
         txtInstru.setBackground(new java.awt.Color(255, 255, 255));
         txtInstru.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
         txtInstru.setForeground(new java.awt.Color(0, 0, 0));
@@ -776,40 +831,8 @@ public class ejemplo extends javax.swing.JFrame {
                 txtInstruActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 582, Short.MAX_VALUE)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(txtInstru, javax.swing.GroupLayout.PREFERRED_SIZE, 686, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(56, Short.MAX_VALUE)
-                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 701, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(43, Short.MAX_VALUE)))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(txtInstru, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 265, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(118, Short.MAX_VALUE)
-                    .addComponent(txtTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(67, Short.MAX_VALUE)))
-        );
+        jPanel3.add(txtInstru, new org.netbeans.lib.awtextra.AbsoluteConstraints(51, 40, 686, 40));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 700, 180));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 800, 370));
 
@@ -955,6 +978,7 @@ public class ejemplo extends javax.swing.JFrame {
     private javax.swing.JLabel imgConta;
     private javax.swing.JLabel imgFis;
     private javax.swing.JLabel imgQuim;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

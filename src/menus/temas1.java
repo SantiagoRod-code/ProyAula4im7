@@ -218,6 +218,40 @@ public class temas1 extends javax.swing.JFrame {
                 btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
                 btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
             }
+        }else if (materias.materias == 5){
+            if (ejercicio.tem5Fin1 == 1){
+                btnTema.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem5Fin2 == 1 ){
+                btnTema1.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema1.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema1.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem5Fin3 == 1 ){
+                btnTema2.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema2.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema2.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem5Fin4 == 1 ){
+                btnTema3.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema3.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema3.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem5Fin5 == 1 ){
+                btnTema4.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema4.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema4.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem5Fin6 == 1 ){
+                btnTema5.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema5.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema5.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem5Fin7 == 1 ){
+                btnTema6.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema6.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema6.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            } else if (ejercicio.tem5Fin8 == 1 ){
+                btnTema7.setIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));          
+                btnTema7.setRolloverIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF72.png"))); 
+                btnTema7.setPressedIcon(new ImageIcon(getClass().getResource("/imagenes/imgTemaF.png")));
+            }
         }
         
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/logo.png")).getImage()); 
@@ -268,6 +302,18 @@ public class temas1 extends javax.swing.JFrame {
             txtNomMat.setText("Quìmica");
             imgQuim.setVisible(true);
             
+            btnTema2.setVisible(false);
+            btnTema3.setVisible(false);
+            btnTema4.setVisible(false);
+            btnTema5.setVisible(false);
+            btnTema6.setVisible(false);
+            btnTema7.setVisible(false);
+            jLabel2.setVisible(false);
+            jLabel3.setVisible(false);
+            jLabel4.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel6.setVisible(false);
+            
             if (Parcial.parcial==1){
                 txtNomPar.setText("Parcial 1");
             }
@@ -278,6 +324,17 @@ public class temas1 extends javax.swing.JFrame {
             jPanel2.setBackground(new Color(210, 121, 0));
             txtNomMat.setBackground(new Color(210, 121, 0));
             txtNomPar.setBackground(new Color(210, 121, 0));
+            
+            btnTema3.setVisible(false);
+            btnTema4.setVisible(false);
+            btnTema5.setVisible(false);
+            btnTema6.setVisible(false);
+            btnTema7.setVisible(false);
+            jLabel3.setVisible(false);
+            jLabel4.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel6.setVisible(false);
+
             
             txtNomMat.setText("Càlculos financieros");
             imgCalFin.setVisible(true);
@@ -293,8 +350,18 @@ public class temas1 extends javax.swing.JFrame {
             txtNomMat.setBackground(new Color(85, 36, 160));
             txtNomPar.setBackground(new Color(85, 36, 160));
             
+            btnTema3.setVisible(false);
+            btnTema4.setVisible(false);
+            btnTema5.setVisible(false);
+            btnTema6.setVisible(false);
+            btnTema7.setVisible(false);
+            jLabel3.setVisible(false);
+            jLabel4.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel6.setVisible(false);
+            
             txtNomMat.setText("Contabilidad");
-            //imgConta.setVisible(true);
+            imgConta.setVisible(true);
             
             if (Parcial.parcial==1){
                 txtNomPar.setText("Parcial 1");
@@ -337,7 +404,6 @@ public class temas1 extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
         setUndecorated(true);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
